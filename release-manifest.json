@@ -1,0 +1,116 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 45,
+      "sha256": "93699a1108fd9da226b06f84ee12e317f4ea4d2f18a8fd05260443fd1bf2faef"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "bytes": 330,
+      "sha256": "235febc6609102206f5536f6224542d646deffb91b9f1c8614e0a160772d1b34"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 71,
+      "sha256": "b61b27f30a05715e7a29c01dbe75911502cb76d9e9562fea439770f6c1af9f45"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "b13eae7493812ea38382b172f60aed89e6d8863b2a2c3c5496624edd8895f3eb"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4219,
+      "sha256": "2697262bef25a4d3674504ec1fc720f30b9a0b8b9a6069a72cd43f66b048eedd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5937,
+      "sha256": "4cbfc043d52f6ae24b37ae04f8d1e8c15d38587064958455d5fb20791f6c4913"
+    },
+    {
+      "path": "app.py",
+      "bytes": 4158,
+      "sha256": "e77b3c5c51c4f6c48e55cf98b5ac603f5fa60621b97f53feff7d08f6128971d4"
+    },
+    {
+      "path": "benchmark.py",
+      "bytes": 6056,
+      "sha256": "859b175365f3060ab8afea0fdd9f47bb55b7e9bf088e0b93d105a6d2adebeb63"
+    },
+    {
+      "path": "plot_results.py",
+      "bytes": 2013,
+      "sha256": "3c439319815de283389b345d007edf45d95f67e9270b58d36177c4ece19e1be6"
+    },
+    {
+      "path": "recommender.py",
+      "bytes": 6309,
+      "sha256": "6e9c20ed596fde80a3efc149b9eaece24a3b1cecb0c337314802f56e7e4648be"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 49,
+      "sha256": "4ff86467ed9d6940841a6615f921a69f75fcfa15da4afbbcbee70a5009d9f4ad"
+    },
+    {
+      "path": "test_recommender.py",
+      "bytes": 7100,
+      "sha256": "6f5f9aa77ed3895278d851d8e7a116fe13516c90345bb3721864fb3590340bd0"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 2384,
+      "sha256": "78d3a317f71ac10e4bea4869530d9256b98ad15082c6314bae7e4da3b14ed896"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 2157,
+      "sha256": "07135caaad42a947437d454b4d12fd4752b82ac4a564556ef3a0e708851c9156"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 1612,
+      "sha256": "548cf99f48560726aa2343d0d7460cf182f61129e26211d393df9d1c8bc1cc19"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 1538,
+      "sha256": "e6f19590912834132974f1015b522bfee57581a2afbb3a383126a556bbe0def7"
+    },
+    {
+      "path": "results/2026-10-19.json",
+      "bytes": 2951,
+      "sha256": "964f2f09597f056cb1c9bc2113315210d2a87663c75e75b6e886547f0cbd295c"
+    },
+    {
+      "path": "results/checks.json",
+      "bytes": 1155,
+      "sha256": "8faba13620f4ef35edd0f52e24b6ace7ecf51aa357b37944dcc52007a0f39ba9"
+    },
+    {
+      "path": "results/ranking-comparison.png",
+      "bytes": 191412,
+      "sha256": "548355dc218a199065ebdc300fd49cd9ae940c83329a3d9a97177202b12ec6ac"
+    },
+    {
+      "path": "results/ranking-comparison.svg",
+      "bytes": 90670,
+      "sha256": "9c80dadba5ef30d0b593f22696ee1b6f9e0fa093517acb8e5c39ceb16e515bc4"
+    },
+    {
+      "path": "results/app-workflow.jpg",
+      "bytes": 127333,
+      "sha256": "43f702997843ecdf320a89afc8dd2df4c7bdba74bd0f09c895c3ddb156ca13de"
+    },
+    {
+      "path": "results/alt-text.json",
+      "bytes": 965,
+      "sha256": "f01bb2745fe02bda48205a0cc7d44c254a0a5c043412ae42878e1bf0268d22f5"
+    }
+  ],
+  "restricted_data_absent": true,
+  "checks": "30unit/API checks; exact full-benchmark repeat; independent metrics; desktop workflow and actual exports; mobile unverified"
+}

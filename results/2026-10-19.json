@@ -1,0 +1,82 @@
+{
+  "dataset": "MovieLens100K; GroupLens research terms; not redistributed",
+  "input_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+  "train_rows_sha256": "b27d4c632100a4417a3a40da32d3740afa502d547ccc3f9cbff5d93cf2335042",
+  "test_rows_sha256": "7699dc23aae2252282bd3b6ea95ff603239bff568ee94556b2201308030461bc",
+  "cutoff_unix_seconds": 889237269,
+  "cutoff_utc": "1998-03-07T02:21:09+00:00",
+  "train_rows": 80003,
+  "future_rows": 19997,
+  "train_users": 751,
+  "train_catalog_items": 1616,
+  "future_users": 301,
+  "cold_future_users": 192,
+  "future_positive_pairs": 11303,
+  "future_positive_pairs_outside_train_catalog": 95,
+  "future_users_without_eligible_positive": 14,
+  "eligible_users_total": 287,
+  "eligible_warm_users": 95,
+  "eligible_cold_users": 192,
+  "parameters": {
+    "neighbors": 20,
+    "shrinkage": 10,
+    "cutoff_position_zero_based": 79999,
+    "positive_rating_min": 4,
+    "k": 10
+  },
+  "results": {
+    "popularity": {
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.1586640336664689,
+        "recall_at_10": 0.1060635281852962,
+        "catalog_coverage": 0.04579207920792079,
+        "unique_recommended_items": 74,
+        "fallback_users": 0
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.27364203905885487,
+        "recall_at_10": 0.08534157167382239,
+        "catalog_coverage": 0.04579207920792079,
+        "unique_recommended_items": 74,
+        "fallback_users": 0
+      }
+    },
+    "item_knn": {
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.13415866288321018,
+        "recall_at_10": 0.073715032147719,
+        "catalog_coverage": 0.14603960396039603,
+        "unique_recommended_items": 236,
+        "fallback_users": 1
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.2655305051758947,
+        "recall_at_10": 0.07463388134779511,
+        "catalog_coverage": 0.14603960396039603,
+        "unique_recommended_items": 236,
+        "fallback_users": 193
+      }
+    }
+  },
+  "fit_status": "Closed-form counts/cosine, no iterative optimizer",
+  "hardware": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.0"
+  },
+  "python": "3.12.14",
+  "run_seconds_observed": 2.875938099999985,
+  "runtime_comparison_claim": false,
+  "uncertainty_interval": null,
+  "scope": "Single fixed chronological local experiment. Binary observed-rating relevance; warm-user primary cohort, many cold users. No tuning. After this run the benchmark is development-visible, not future independent validation.",
+  "data_attribution": "Harper and Konstan2015, The MovieLens Datasets: History and Context, DOI10.1145/2827872; GroupLens Research, University of Minnesota."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+    "type": "Official data provenance and actual licence terms",
+    "checked_on": "2026-10-19",
+    "conditions": "Research use, acknowledgement, no redistribution or commercial use without separate permission. Raw data and individual outputs remain local. Public artifacts are authored code, hashes and aggregate results."
+  },
+  {
+    "url": "https://www.ra.ethz.ch/CDstore/www10/papers/519/",
+    "title": "Item-based Collaborative Filtering Recommendation Algorithms",
+    "authors": "Sarwar, Karypis, Konstan and Riedl",
+    "review_status": "Published conference paper, WWW2001",
+    "method_read": "Item relationships from the user-item matrix; cosine and weighted-sum families.",
+    "our_variation": "Authored binary-positive shrunk cosine and top20 sources per candidate. Not an exact paper reproduction. Paper-reported outcomes are not our measurements."
+  },
+  {
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ndcg_score.html",
+    "type": "Official metric reference",
+    "checked_on": "2026-10-19",
+    "version_read": "Stable1.9.1 documentation; this repository implements and independently checks the declared binary NDCG directly."
+  },
+  {
+    "url": "https://doi.org/10.1145/2827872",
+    "citation": "F. Maxwell Harper and Joseph A. Konstan(2015). The MovieLens Datasets: History and Context. ACM TiiS5(4), Article19.",
+    "note": "Acknowledgement requested by GroupLens. No endorsement implied."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "unit_and_api_checks_passed": 30,
+  "benchmark_repeat_same_predictions_and_aggregates": true,
+  "independent_metric_recomputation": true,
+  "strict_timestamp_separation": true,
+  "all_rankings_seen_exclusion_and_catalog_assertions": true,
+  "benchmark_raw_and_individual_audit_publication": false,
+  "no_tuning_or_selection_after_result": true,
+  "benchmark_exposure": "First fit and deterministic repeat; now development-visible, not fresh independent validation",
+  "data_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+  "browser_primary_workflow_verified": true,
+  "visible_unknown_id_error_and_stale_exports_disabled": true,
+  "visible_empty_history_fallback": true,
+  "browser_json_download_exact_api_parity": true,
+  "browser_csv_download_exact_api_parity": true,
+  "keyboard_focus_to_json_export_verified": true,
+  "screenshot_actual_synthetic_workflow": true,
+  "mobile_browser_verified": false,
+  "mobile_note": "390x844 override requested, actual Chrome stayed1920x889. Responsive CSS present; mobile support unverified and explicitly documented.",
+  "figure_values_zero_axes_and_readability_inspected": true
+}

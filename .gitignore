@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+restricted/
+private/
+*.zip
+*.npz
+*.npy
+*.csv

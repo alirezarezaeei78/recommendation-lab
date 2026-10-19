@@ -1,0 +1,10 @@
+[
+  {
+    "file": "results/ranking-comparison.png",
+    "text": "MovieLens100K chronological comparison over95eligible warm users. Popularity versus item-kNN: NDCG@10 0.1587 versus0.1342; Recall@10 0.1061 versus0.0737; catalog coverage0.0458 versus0.1460. All bar axes start at zero. Train catalog1616items; full candidates with seen items excluded. The primary cohort excludes192eligible cold users, whose secondary results are saved separately. Fixed20neighbors, shrunk cosine; one local offline experiment."
+  },
+  {
+    "file": "results/app-workflow.jpg",
+    "text": "Actual desktop Recommendation Explorer with an authored synthetic catalog, local-only. Liked S01,S02 and other seen S05 produce9candidates; five shown. S03 andS04 each score0.5, with0.25 contributed by each liked item; S06,S07,S08 scorezero. JSON and CSV export buttons sit below the table. Scores are ranking signals, not probabilities. This screenshot contains no MovieLens records."
+  }
+]
