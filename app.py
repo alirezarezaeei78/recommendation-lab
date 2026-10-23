@@ -5,6 +5,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 from recommender import Recommender, synthetic_rows, read_rows, csv_export
+from bpr import BPRRecommender
 
 ROOT = Path(__file__).resolve().parent
 
@@ -30,7 +31,10 @@ def handler_for(model, synthetic):
             if path in assets:
                 f, mime = assets[path]; return self.reply((ROOT/f).read_text(encoding='utf-8'), mime)
             if path == '/api/catalog':
-                return self.reply(json.dumps({'items': model.items, 'synthetic': synthetic, 'neighbors': model.neighbors, 'shrinkage': model.shrinkage}))
+                return self.reply(json.dumps({'items': model.items, 'synthetic': synthetic,
+                    'neighbors': model.neighbors, 'shrinkage': model.shrinkage,
+                    'users': model.users if hasattr(model, 'user_factors') else [],
+                    'bpr_training': getattr(model, 'training', None)}))
             self.reply(json.dumps({'error': 'Not found'}), status=404)
 
         def do_POST(self):
@@ -46,8 +50,10 @@ def handler_for(model, synthetic):
                 if not 0 < size <= 65536:
                     return self.reply(json.dumps({'error':'Request must be1..65536 bytes'}), status=413)
                 args = json.loads(self.rfile.read(size))
-                if not isinstance(args, dict) or set(args)-{'liked','seen','method','n'}:
+                if not isinstance(args, dict) or set(args)-{'liked','seen','method','n','user_id'}:
                     raise ValueError('Unknown request fields')
+                if args.get('user_id') is not None and not isinstance(args['user_id'], str):
+                    raise ValueError('Training-user ID must be a string')
                 for key in ('liked','seen'):
                     value = args.get(key, [])
                     if not isinstance(value, list) or not all(isinstance(x,str) for x in value):
@@ -63,8 +69,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data', help='Your appropriately licensed CSV: user,item,rating,timestamp')
     parser.add_argument('--port', type=int, default=8765)
+    parser.add_argument('--bpr-seed', type=int, default=13, help='Fixed default seed; not chosen from test results')
     args = parser.parse_args()
-    model = Recommender(read_rows(args.data) if args.data else synthetic_rows())
+    model = BPRRecommender(read_rows(args.data) if args.data else synthetic_rows(), seed=args.bpr_seed)
     server = ThreadingHTTPServer(('127.0.0.1', args.port), handler_for(model, not args.data))
     print(f'Open http://127.0.0.1:{server.server_port}; local processing; synthetic={not bool(args.data)}', flush=True)
     server.serve_forever()

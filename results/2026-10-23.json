@@ -1,0 +1,589 @@
+{
+  "dataset": "MovieLens100K; GroupLens research terms; not redistributed",
+  "input_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+  "train_rows_sha256": "b27d4c632100a4417a3a40da32d3740afa502d547ccc3f9cbff5d93cf2335042",
+  "test_rows_sha256": "7699dc23aae2252282bd3b6ea95ff603239bff568ee94556b2201308030461bc",
+  "cutoff_unix_seconds": 889237269,
+  "cutoff_utc": "1998-03-07T02:21:09+00:00",
+  "train_rows": 80003,
+  "future_rows": 19997,
+  "train_users": 751,
+  "train_catalog_items": 1616,
+  "future_users": 301,
+  "cold_future_users": 192,
+  "future_positive_pairs_outside_train_catalog": 95,
+  "future_users_without_eligible_positive": 14,
+  "eligible_users_total": 287,
+  "eligible_warm_users": 95,
+  "eligible_cold_users": 192,
+  "data_attribution": "Harper and Konstan2015, The MovieLens Datasets: History and Context, DOI10.1145/2827872; GroupLens Research, University of Minnesota.",
+  "date": "2026-10-23",
+  "status": "completed",
+  "baseline_reproduction_passed": true,
+  "protocol_sha256": "1b3733ba8e9b7fd0636752320b6a45f7503ffde723a46363f655f9feae02499f",
+  "exposure": "Same 19 October development-visible data and split. Exploratory extension, not fresh independent validation.",
+  "baselines": {
+    "popularity": {
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.1586640336664689,
+        "recall_at_10": 0.1060635281852962,
+        "catalog_coverage": 0.04579207920792079,
+        "unique_recommended_items": 74,
+        "fallback_users": 0
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.27364203905885487,
+        "recall_at_10": 0.08534157167382239,
+        "catalog_coverage": 0.04579207920792079,
+        "unique_recommended_items": 74,
+        "fallback_users": 0
+      }
+    },
+    "item_knn": {
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.13415866288321018,
+        "recall_at_10": 0.073715032147719,
+        "catalog_coverage": 0.14603960396039603,
+        "unique_recommended_items": 236,
+        "fallback_users": 1
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.2655305051758947,
+        "recall_at_10": 0.07463388134779511,
+        "catalog_coverage": 0.14603960396039603,
+        "unique_recommended_items": 236,
+        "fallback_users": 193
+      }
+    }
+  },
+  "bpr_runs": [
+    {
+      "seed": 13,
+      "training": {
+        "seed": 13,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 44072,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6881464442468465
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.5170570238951352
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.27268578428866364
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.22605052202490977
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.19582996242198694
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.1720154298008581
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.15418412891397634
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.13927162763351406
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.12898317356738448
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.12091898176745378
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.11327731195904205
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.10505740347364503
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.10072359936485967
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.09685204997266522
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.0893910621196697
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.08617732805881381
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08178525489992834
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.07948243757988802
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.07754106122312669
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07686481366526043
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.06953941066582875
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.06733205776007731
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.06679674805855228
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.06591719691366915
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.0652145906960949
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.0620687851338448
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.060894965366770595
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.058727293695397725
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.05553915927970684
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.05596077921811304
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.108029399998486
+      },
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.1680665710273781,
+        "recall_at_10": 0.11279424382997723,
+        "catalog_coverage": 0.2141089108910891,
+        "unique_recommended_items": 346,
+        "fallback_users": 1
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.27675437720967855,
+        "recall_at_10": 0.08756950890812447,
+        "catalog_coverage": 0.2141089108910891,
+        "unique_recommended_items": 346,
+        "fallback_users": 193
+      },
+      "factor_roundtrip_exact": true
+    },
+    {
+      "seed": 29,
+      "training": {
+        "seed": 29,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 44072,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6854351959658699
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.48718814206958616
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.2650956318693945
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.23184152358909943
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.19518531487541593
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.17532633679664855
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.1530073967029101
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.1425314516662188
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.12992784280832373
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.12259034034528107
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.11601299449008916
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.11041539661987959
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.10441491147782198
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.09760214131677794
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.0909341892457783
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.0889665640296878
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08493857164957666
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.082842415304512
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.07851702004892896
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07475005838405331
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.07072648378033282
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.06952411441288295
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.06852506547165471
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.06690333068051643
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.06436789508744666
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.06302484335879228
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.06026851528784523
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.05985058234951461
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.058557290577086765
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.056132799159498085
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.0779758999706246
+      },
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.17157289842322704,
+        "recall_at_10": 0.11023312506121036,
+        "catalog_coverage": 0.22524752475247525,
+        "unique_recommended_items": 364,
+        "fallback_users": 1
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.27791500822921045,
+        "recall_at_10": 0.08672175182438631,
+        "catalog_coverage": 0.22524752475247525,
+        "unique_recommended_items": 364,
+        "fallback_users": 193
+      },
+      "factor_roundtrip_exact": true
+    },
+    {
+      "seed": 47,
+      "training": {
+        "seed": 47,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 44072,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6879055703545378
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.5168739389618029
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.27334277056743195
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.22964927781610614
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.19777932036299523
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.17215347057690225
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.1542396329182379
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.141391020945097
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.1255973131681748
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.11816304599817921
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.10985706346797562
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.10377654235253513
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.09789254839595811
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.09350226649513779
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.08941392215362022
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.08536718999447981
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08400283950786881
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.07890484010725321
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.07513627344612245
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07320670096075542
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.07064422575547617
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.06842970382844846
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.06621185879370634
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.06503610930461852
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.06370744744393847
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.061051220541630924
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.059439959126578894
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.05815831271914285
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.05879108650303186
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.05772294634660677
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.2482484999927692
+      },
+      "warm_primary": {
+        "eligible_users": 95,
+        "ndcg_at_10": 0.17322205265229754,
+        "recall_at_10": 0.12070566545338744,
+        "catalog_coverage": 0.20853960396039603,
+        "unique_recommended_items": 337,
+        "fallback_users": 1
+      },
+      "all_eligible_secondary": {
+        "eligible_users": 287,
+        "ndcg_at_10": 0.27846089551757874,
+        "recall_at_10": 0.09018827216326025,
+        "catalog_coverage": 0.20853960396039603,
+        "unique_recommended_items": 337,
+        "fallback_users": 193
+      },
+      "factor_roundtrip_exact": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.9",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "torch": "2.4.0"
+    }
+  },
+  "scope": "Established-method minibatch Adam BPR variant; no tuning, scientific novelty, causal benefit or production claim.",
+  "default_app_seed": 13,
+  "uncertainty_interval": null,
+  "bpr_seed_summary": {
+    "ndcg_at_10": {
+      "mean": 0.17095384070096756,
+      "min": 0.1680665710273781,
+      "max": 0.17322205265229754,
+      "all_seeds": [
+        0.1680665710273781,
+        0.17157289842322704,
+        0.17322205265229754
+      ]
+    },
+    "recall_at_10": {
+      "mean": 0.11457767811485835,
+      "min": 0.11023312506121036,
+      "max": 0.12070566545338744,
+      "all_seeds": [
+        0.11279424382997723,
+        0.11023312506121036,
+        0.12070566545338744
+      ]
+    },
+    "catalog_coverage": {
+      "mean": 0.21596534653465346,
+      "min": 0.20853960396039603,
+      "max": 0.22524752475247525,
+      "all_seeds": [
+        0.2141089108910891,
+        0.22524752475247525,
+        0.20853960396039603
+      ]
+    }
+  },
+  "restricted_audit_sha256": {
+    "baseline-aggregate.json": "6294188ef74aeb121b421483b7e551838f3c99a08009eb0129b75a12e9a5820e",
+    "factors-13.npz": "b8872ea5ce9fc7cebe248c15547a35714b3ed38aa9e0cf6093fa45d143721593",
+    "factors-29.npz": "ac0ae16ad934a39476c5beb526e16768dd5f38c2bd15b1ced501f5ab09f7db7e",
+    "factors-47.npz": "40d9c5e9393fbd980d8915f789eaf878742c0eb4f5123c4eaf193e361c477ce3",
+    "predictions-13.json": "edfcc58b84b7ef37359c85319a3a872395db48a842bdb176ba56378678c0f926",
+    "predictions-29.json": "988e6ff1b460938a4f79d38e576d7ac99898e78e34a203292191ae070b1e7552",
+    "predictions-47.json": "46bf7febdc7882d07c384b8d371b8aaeeb4d0cc7c3bd63254b50fbe8c5fedfd8"
+  }
+}

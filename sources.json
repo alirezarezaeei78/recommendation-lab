@@ -23,5 +23,23 @@
     "url": "https://doi.org/10.1145/2827872",
     "citation": "F. Maxwell Harper and Joseph A. Konstan(2015). The MovieLens Datasets: History and Context. ACM TiiS5(4), Article19.",
     "note": "Acknowledgement requested by GroupLens. No endorsement implied."
+  },
+  {
+    "url": "https://arxiv.org/abs/1205.2618",
+    "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback",
+    "authors": "Rendle, Freudenthaler, Gantner and Schmidt-Thieme",
+    "review_status": "UAI2009 proceedings; arXiv v1 posted9 May2012",
+    "checked_on": "2026-10-23",
+    "primary_full_text_checked": "https://arxiv.org/pdf/1205.2618",
+    "sections_checked": "Pairwise preference data, BPR-Opt log-sigmoid objective and regularization, LearnBPR sampling, matrix factorization",
+    "our_variation": "Fresh authored minibatch Adam32-dimensional dot-product factors; one sampled unknown negative per positive per epoch; exclude all rated items including dislikes. Not exact bootstrapped SGD reproduction.",
+    "paper_reported_results_used": false
+  },
+  {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+    "checked_on": "2026-10-23",
+    "type": "Rechecked current provider terms and provenance before new use",
+    "conditions": "Research with acknowledgement; no redistribution or commercial/revenue-bearing use without separate permission. Original data, learned benchmark factors and individual outputs stay local; only authored code and aggregates public.",
+    "data_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490"
   }
 ]

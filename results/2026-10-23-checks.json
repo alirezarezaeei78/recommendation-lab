@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-23",
+  "unit_api_checks_passed": 43,
+  "actual_per_user_metric_oracles_passed": 861,
+  "baseline_reproduction_absolute_tolerance": 1e-12,
+  "same_candidate_counts_relevance_and_cohorts_all_seeds": true,
+  "gradient_check": "Independent central finite differences; float64 pair-loss gradients within1e-8",
+  "training_negatives": "All training-seen items, including ratings below4, excluded; bounded rejection with exact-complement fallback",
+  "seed_results_preserved": [
+    13,
+    29,
+    47
+  ],
+  "factor_reload_exact": true,
+  "browser_workflow": "Native connected Chrome, synthetic profileD00, BPR generated with keyboard activation; actual JSON/CSV downloads exactly match API outputs",
+  "browser_errors": "Unknown item and anonymous BPR rejected visibly; exports disabled on errors/input changes",
+  "mobile": "390x844; page width375px, contained table scrolling; labels and focus observed; not a full WCAG audit",
+  "benchmark_exposure": "Same development-visible19 October split; exploratory",
+  "figure": "Static original measured PNG/SVG; all three seeds shown, zero-origin axes; no CI or runtime claim",
+  "private_data": "No restricted ratings, user-item outputs or benchmark factors selected for public upload"
+}

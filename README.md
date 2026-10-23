@@ -1,27 +1,36 @@
 # Recommendation Explorer
 
 A local workbench for recommender developers and product analysts: select liked
-and seen items, compare a learned item-neighborhood ranking with popularity,
+and seen items, compare BPR matrix factorization, item-neighborhood ranking and popularity,
 inspect contributing history, then export the exact results as JSON or CSV.
 No sign-in, paid key, telemetry or external inference service. This is a small
 local research/demo app, not a hosted production recommendation service. Desktop
-browser workflows and actual downloads were verified. Mobile rendering could not
-be verified through the connected browser, so mobile support is not claimed.
+browser workflows and actual downloads were verified. The23 October BPR workflow
+was also checked at390px width, with contained table scrolling, labelled controls
+and keyboard submission; this is a targeted check, not a complete accessibility audit.
 
 ## Run
 
-Python3.12 was checked; NumPy1.26.4, SciPy1.17.1, Matplotlib3.10.0.
+The23 October run used Python3.12.9, NumPy1.26.4, SciPy1.13.1,
+PyTorch2.4.0(CPU), Matplotlib3.10.0. Earlier run versions remain in their saved results.
 
 ```sh
 python -m venv .venv
 # Activate .venv using your platform's activation command.
+# CPU-only PyTorch avoids downloading CUDA dependencies on Linux.
+python -m pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 python -m unittest -v
 python app.py
 ```
 
 Open http://127.0.0.1:8765. The default is an **authored synthetic catalog**, not
-MovieLens data. Try liked `S01,S02`, other seen `S05`; generate, inspect contributor
+MovieLens data. Choose training-user profile `D00`, select **BPR matrix factorization**,
+generate, switch to the other methods, then export JSON or CSV. All three methods
+exclude the same past seen items. BPR fits locally at startup using fixed seed13;
+that default was chosen before evaluation. It scores an existing fitted user and
+does not personalize arbitrary new users. Custom anonymous histories support
+item-kNN/popularity. Try liked `S01,S02`, other seen `S05`; generate, inspect contributor
 scores, switch to popularity, then export. Clear the history to see the explicit
 popularity fallback. An unknown ID gives a visible error and disables stale exports.
 
@@ -39,6 +48,55 @@ Input is processed by the loopback-only Python server, never uploaded externally
 The current engine rejects >3000items or >500000rows before dense similarity
 allocation. It is intended for small offline investigations. Model scores are
 ranking signals, **not probabilities**, and differ in scale between methods.
+BPR additionally caps training users at10000; it retains a dense seen-item mask
+and is a small offline implementation. The app fits only the data explicitly
+supplied to it; chronological evaluation uses the separate command below.
+
+## 23 October addition: trained BPR factors and matched exports
+
+An authored compact variant of established Bayesian Personalized Ranking now
+fits32-dimensional user/item factors with a pairwise logistic objective. The
+minibatch Adam optimizer, regularization and negative exclusion policy are
+declared in[the frozen protocol](experiments/2026-10-23/PROTOCOL.md); this is not
+an exact implementation or reproduction of the original paper's reported results.
+
+The same exposed19 October MovieLens100K split and95 warm users were reused.
+Baselines reproduced their saved metrics to1e-12. No hyperparameter sweep or
+test-based checkpoint/seed selection was performed; all three fixed seeds remain.
+
+| Warm-user primary task | Popularity | Item-kNN | BPR mean, seeds13/29/47 |
+| --- | ---: | ---: | ---: |
+| NDCG@10 |0.158664|0.134159|0.170954 |
+| Recall@10 |0.106064|0.073715|0.114578 |
+| Catalog coverage |4.58%|14.60%|21.60% |
+
+BPR NDCG@10 was0.168067/0.171573/0.173222. The range is training-seed
+variation, not a confidence interval. One warm user had no fitted positive
+profile and used popularity. Another192 eligible cold users used popularity
+and remain a separate cohort in the full[aggregate result](results/2026-10-23.json).
+This modest result on a repeatedly exposed offline task is exploratory, not
+independent validation, a click/revenue result or a general superiority claim.
+
+![Measured BPR comparison with all three seeds](results/bpr-comparison.png)
+
+```sh
+python -m unittest -v
+python benchmark_bpr.py --data /private/ml-100k/u.data --audit-dir /private/bpr-audit --output results/2026-10-23.json
+python plot_bpr.py
+```
+
+Only code, authored demo data, aggregate results and figure sources are public.
+All individual predictions and benchmark factors remain in the explicitly private
+audit directory. The default synthetic app and the real-data research comparison
+are distinct. Gradient finite differences, sampled-negative exclusion, unchanged
+candidates/cohorts, model reload, API/export parity and native browser errors,
+empty-history fallback, mobile layout and real download parity were checked.
+CSV retains full-precision scores; the visible table rounds scores to6 decimals.
+
+Method: Rendle, Freudenthaler, Gantner and Schmidt-Thieme,
+[BPR: Bayesian Personalized Ranking from Implicit Feedback](https://arxiv.org/abs/1205.2618),
+UAI2009; arXiv version posted9 May2012. No paper-reported metric is presented
+as our experiment.
 
 ## The fixed19 October experiment: personalization lost this comparison
 
