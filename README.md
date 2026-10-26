@@ -163,3 +163,16 @@ not the original paper's exact rating predictor, a novel algorithm or SOTA claim
 Code and authored synthetic assets:MIT. MovieLens data retain their separate
 research/noncommercial/no-redistribution conditions; this code's licence grants
 no rights to those data. NumPy/SciPy/Matplotlib retain their respective licences.
+
+## 26 October addition: an explicit sparse-history policy
+
+[New feature and measured query-history experiment](experiments/2026-10-26/README.md):
+compare popularity below3 unique positive items with an optional centroid of
+learned item factors for longer histories, then export the chosen policy and
+full-precision rankings. The threshold is declared and untuned. Results are mixed:
+at full query history mean NDCG@10 was0.162093 versus popularity0.158664, while
+Recall@10 fell to0.093074 versus0.106064. The same exposed95warm-user task and
+three frozen model seeds were reused; this is not fresh independent validation.
+The complete six-cap experiment, privacy-protected small-bin supports, diagrams,
+runner, actual checks and limitations are linked above. The new policy is optional;
+the default method is unchanged.

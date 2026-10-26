@@ -1,0 +1,1789 @@
+{
+  "date": "2026-10-26",
+  "status": "completed",
+  "input_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+  "protocol_sha256": "94e742c43c3f1a6a9923be15c9fca3ee527ff6b9ce53c13b00644492c5c94785",
+  "threshold": 3,
+  "query_caps": [
+    0,
+    1,
+    3,
+    5,
+    10,
+    "all"
+  ],
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "new_training_fits": 0,
+  "prior_commit": "92a1c41b23453db4dd53a33724b3a36dfafcb6f5",
+  "dataset": "MovieLens100K; GroupLens research terms; not redistributed",
+  "data_attribution": "Harper and Konstan2015, The MovieLens Datasets: History and Context, DOI10.1145/2827872; GroupLens Research, University of Minnesota.",
+  "cutoff_unix_seconds": 889237269,
+  "train_rows": 80003,
+  "future_rows": 19997,
+  "train_rows_sha256": "b27d4c632100a4417a3a40da32d3740afa502d547ccc3f9cbff5d93cf2335042",
+  "test_rows_sha256": "7699dc23aae2252282bd3b6ea95ff603239bff568ee94556b2201308030461bc",
+  "exposure": "Known19/23 October chronological task; exploratory frozen-model query ablation. Removed query likes still informed the frozen training objects. Full seen exclusion preserved. Not a cold-start or retraining experiment.",
+  "parameters": {
+    "neighbors": 20,
+    "shrinkage": 10,
+    "n": 10,
+    "positive_rating_min": 4,
+    "threshold_tuned": false
+  },
+  "uncertainty_interval": null,
+  "runtime_comparison_claim": false,
+  "runs": [
+    {
+      "seed": 13,
+      "factor_sha256": "b8872ea5ce9fc7cebe248c15547a35714b3ed38aa9e0cf6093fa45d143721593",
+      "conditions": [
+        {
+          "cap": 0,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            }
+          }
+        },
+        {
+          "cap": 1,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.0950032580734593,
+                "recall_at_10": 0.07481690304219486,
+                "catalog_coverage": 0.33601485148514854,
+                "unique_recommended_items": 543,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.14435731700659715,
+                "recall_at_10": 0.12375061103828028,
+                "catalog_coverage": 0.2530940594059406,
+                "unique_recommended_items": 409,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            }
+          }
+        },
+        {
+          "cap": 3,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.10803468935071806,
+                "recall_at_10": 0.08422514803381509,
+                "catalog_coverage": 0.30198019801980197,
+                "unique_recommended_items": 488,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15602365454460612,
+                "recall_at_10": 0.1259482284525656,
+                "catalog_coverage": 0.24814356435643564,
+                "unique_recommended_items": 401,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15718203226196442,
+                "recall_at_10": 0.1267579450517559,
+                "catalog_coverage": 0.2469059405940594,
+                "unique_recommended_items": 399,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            }
+          }
+        },
+        {
+          "cap": 5,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.12714925345072764,
+                "recall_at_10": 0.08786786884683379,
+                "catalog_coverage": 0.2747524752475248,
+                "unique_recommended_items": 444,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16699902531511557,
+                "recall_at_10": 0.13011815834931484,
+                "catalog_coverage": 0.24752475247524752,
+                "unique_recommended_items": 400,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16815740303247387,
+                "recall_at_10": 0.1309278749485051,
+                "catalog_coverage": 0.24628712871287128,
+                "unique_recommended_items": 398,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            }
+          }
+        },
+        {
+          "cap": 10,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1473469727500726,
+                "recall_at_10": 0.10755761755976602,
+                "catalog_coverage": 0.2506188118811881,
+                "unique_recommended_items": 405,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15866439385538653,
+                "recall_at_10": 0.118822729140926,
+                "catalog_coverage": 0.21658415841584158,
+                "unique_recommended_items": 350,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15982277157274485,
+                "recall_at_10": 0.11963244574011628,
+                "catalog_coverage": 0.21534653465346534,
+                "unique_recommended_items": 348,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            }
+          }
+        },
+        {
+          "cap": "all",
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27364203905885487,
+                "recall_at_10": 0.08534157167382239,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 0,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.15563863038685377,
+                  "recall_at_10": 0.10498729014013981,
+                  "catalog_coverage": 0.04579207920792079,
+                  "unique_recommended_items": 74,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13415866288321018,
+                "recall_at_10": 0.073715032147719,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2655305051758947,
+                "recall_at_10": 0.07463388134779511,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.13178955144856846,
+                  "recall_at_10": 0.07277025738049726,
+                  "catalog_coverage": 0.13985148514851486,
+                  "unique_recommended_items": 226,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16204529036536677,
+                "recall_at_10": 0.09817830680146085,
+                "catalog_coverage": 0.12871287128712872,
+                "unique_recommended_items": 208,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2747612703703368,
+                "recall_at_10": 0.08273148097185598,
+                "catalog_coverage": 0.12871287128712872,
+                "unique_recommended_items": 208,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.16027589134969616,
+                  "recall_at_10": 0.09775962396227658,
+                  "catalog_coverage": 0.12314356435643564,
+                  "unique_recommended_items": 199,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1632036680827251,
+                "recall_at_10": 0.09898802340065113,
+                "catalog_coverage": 0.12314356435643564,
+                "unique_recommended_items": 199,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2751447055032603,
+                "recall_at_10": 0.08299950563012455,
+                "catalog_coverage": 0.12314356435643564,
+                "unique_recommended_items": 199,
+                "fallback_users": 194,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.16027589134969616,
+                  "recall_at_10": 0.09775962396227658,
+                  "catalog_coverage": 0.12314356435643564,
+                  "unique_recommended_items": 199,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "bpr_full_profile_reference": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1680665710273781,
+                "recall_at_10": 0.11279424382997723,
+                "catalog_coverage": 0.2141089108910891,
+                "unique_recommended_items": 346,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27675437720967855,
+                "recall_at_10": 0.08756950890812447,
+                "catalog_coverage": 0.2141089108910891,
+                "unique_recommended_items": 346,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.16568008963952732,
+                  "recall_at_10": 0.11186275235782474,
+                  "catalog_coverage": 0.20915841584158415,
+                  "unique_recommended_items": 338,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "factor_sha256": "ac0ae16ad934a39476c5beb526e16768dd5f38c2bd15b1ced501f5ab09f7db7e",
+      "conditions": [
+        {
+          "cap": 0,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            }
+          }
+        },
+        {
+          "cap": 1,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.0950032580734593,
+                "recall_at_10": 0.07481690304219486,
+                "catalog_coverage": 0.33601485148514854,
+                "unique_recommended_items": 543,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1350412967687847,
+                "recall_at_10": 0.11303655433320738,
+                "catalog_coverage": 0.2568069306930693,
+                "unique_recommended_items": 415,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            }
+          }
+        },
+        {
+          "cap": 3,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.10803468935071806,
+                "recall_at_10": 0.08422514803381509,
+                "catalog_coverage": 0.30198019801980197,
+                "unique_recommended_items": 488,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13440372824732247,
+                "recall_at_10": 0.09786127901054203,
+                "catalog_coverage": 0.24566831683168316,
+                "unique_recommended_items": 397,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13556210596468074,
+                "recall_at_10": 0.0986709956097323,
+                "catalog_coverage": 0.2431930693069307,
+                "unique_recommended_items": 393,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            }
+          }
+        },
+        {
+          "cap": 5,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.12714925345072764,
+                "recall_at_10": 0.08786786884683379,
+                "catalog_coverage": 0.2747524752475248,
+                "unique_recommended_items": 444,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1341376823483869,
+                "recall_at_10": 0.11061815964011512,
+                "catalog_coverage": 0.24257425742574257,
+                "unique_recommended_items": 392,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13529606006574524,
+                "recall_at_10": 0.1114278762393054,
+                "catalog_coverage": 0.2400990099009901,
+                "unique_recommended_items": 388,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            }
+          }
+        },
+        {
+          "cap": 10,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1473469727500726,
+                "recall_at_10": 0.10755761755976602,
+                "catalog_coverage": 0.2506188118811881,
+                "unique_recommended_items": 405,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.152666637942812,
+                "recall_at_10": 0.10907279725028689,
+                "catalog_coverage": 0.2301980198019802,
+                "unique_recommended_items": 372,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1538250156601703,
+                "recall_at_10": 0.10988251384947717,
+                "catalog_coverage": 0.22772277227722773,
+                "unique_recommended_items": 368,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            }
+          }
+        },
+        {
+          "cap": "all",
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27364203905885487,
+                "recall_at_10": 0.08534157167382239,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 0,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.15563863038685377,
+                  "recall_at_10": 0.10498729014013981,
+                  "catalog_coverage": 0.04579207920792079,
+                  "unique_recommended_items": 74,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13415866288321018,
+                "recall_at_10": 0.073715032147719,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2655305051758947,
+                "recall_at_10": 0.07463388134779511,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.13178955144856846,
+                  "recall_at_10": 0.07277025738049726,
+                  "catalog_coverage": 0.13985148514851486,
+                  "unique_recommended_items": 226,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16253678516873613,
+                "recall_at_10": 0.09261871623225011,
+                "catalog_coverage": 0.12314356435643564,
+                "unique_recommended_items": 199,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2749239602878284,
+                "recall_at_10": 0.0808911983792601,
+                "catalog_coverage": 0.12314356435643564,
+                "unique_recommended_items": 199,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.1607779559337831,
+                  "recall_at_10": 0.09208047230555595,
+                  "catalog_coverage": 0.1188118811881188,
+                  "unique_recommended_items": 192,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1636951628860944,
+                "recall_at_10": 0.0934284328314404,
+                "catalog_coverage": 0.1188118811881188,
+                "unique_recommended_items": 192,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2753073954207519,
+                "recall_at_10": 0.08115922303752866,
+                "catalog_coverage": 0.1188118811881188,
+                "unique_recommended_items": 192,
+                "fallback_users": 194,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.1607779559337831,
+                  "recall_at_10": 0.09208047230555595,
+                  "catalog_coverage": 0.1188118811881188,
+                  "unique_recommended_items": 192,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "bpr_full_profile_reference": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.17157289842322704,
+                "recall_at_10": 0.11023312506121036,
+                "catalog_coverage": 0.22524752475247525,
+                "unique_recommended_items": 364,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27791500822921045,
+                "recall_at_10": 0.08672175182438631,
+                "catalog_coverage": 0.22524752475247525,
+                "unique_recommended_items": 364,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.1679821129988253,
+                  "recall_at_10": 0.10841942590668571,
+                  "catalog_coverage": 0.22153465346534654,
+                  "unique_recommended_items": 358,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "factor_sha256": "40d9c5e9393fbd980d8915f789eaf878742c0eb4f5123c4eaf193e361c477ce3",
+      "conditions": [
+        {
+          "cap": 0,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 0
+              }
+            }
+          }
+        },
+        {
+          "cap": 1,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.0950032580734593,
+                "recall_at_10": 0.07481690304219486,
+                "catalog_coverage": 0.33601485148514854,
+                "unique_recommended_items": 543,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13825910033630243,
+                "recall_at_10": 0.11084925981217379,
+                "catalog_coverage": 0.26113861386138615,
+                "unique_recommended_items": 422,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 95,
+                "retained_positive_min": 0,
+                "retained_positive_max": 1
+              }
+            }
+          }
+        },
+        {
+          "cap": 3,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.10803468935071806,
+                "recall_at_10": 0.08422514803381509,
+                "catalog_coverage": 0.30198019801980197,
+                "unique_recommended_items": 488,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1428295373749161,
+                "recall_at_10": 0.11094099317337903,
+                "catalog_coverage": 0.2555693069306931,
+                "unique_recommended_items": 413,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1425262051567633,
+                "recall_at_10": 0.11094099317337903,
+                "catalog_coverage": 0.25433168316831684,
+                "unique_recommended_items": 411,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 3
+              }
+            }
+          }
+        },
+        {
+          "cap": 5,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.12714925345072764,
+                "recall_at_10": 0.08786786884683379,
+                "catalog_coverage": 0.2747524752475248,
+                "unique_recommended_items": 444,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16320447664214185,
+                "recall_at_10": 0.12211448493633734,
+                "catalog_coverage": 0.24814356435643564,
+                "unique_recommended_items": 401,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.16290114442398906,
+                "recall_at_10": 0.12211448493633734,
+                "catalog_coverage": 0.24628712871287128,
+                "unique_recommended_items": 398,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 5
+              }
+            }
+          }
+        },
+        {
+          "cap": 10,
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1473469727500726,
+                "recall_at_10": 0.10755761755976602,
+                "catalog_coverage": 0.2506188118811881,
+                "unique_recommended_items": 405,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1610739181264956,
+                "recall_at_10": 0.12102906523539192,
+                "catalog_coverage": 0.22462871287128713,
+                "unique_recommended_items": 363,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1607705859083428,
+                "recall_at_10": 0.12102906523539192,
+                "catalog_coverage": 0.21967821782178218,
+                "unique_recommended_items": 355,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 10
+              }
+            }
+          }
+        },
+        {
+          "cap": "all",
+          "methods": {
+            "popularity": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.1586640336664689,
+                "recall_at_10": 0.1060635281852962,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27364203905885487,
+                "recall_at_10": 0.08534157167382239,
+                "catalog_coverage": 0.04579207920792079,
+                "unique_recommended_items": 74,
+                "fallback_users": 0,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 0,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.15563863038685377,
+                  "recall_at_10": 0.10498729014013981,
+                  "catalog_coverage": 0.04579207920792079,
+                  "unique_recommended_items": 74,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "item_knn": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.13415866288321018,
+                "recall_at_10": 0.073715032147719,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2655305051758947,
+                "recall_at_10": 0.07463388134779511,
+                "catalog_coverage": 0.14603960396039603,
+                "unique_recommended_items": 236,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.13178955144856846,
+                  "recall_at_10": 0.07277025738049726,
+                  "catalog_coverage": 0.13985148514851486,
+                  "unique_recommended_items": 226,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "factor_centroid": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15968431613354367,
+                "recall_at_10": 0.08680433569174567,
+                "catalog_coverage": 0.13242574257425743,
+                "unique_recommended_items": 214,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2739797632204302,
+                "recall_at_10": 0.0789665776428562,
+                "catalog_coverage": 0.13242574257425743,
+                "unique_recommended_items": 214,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.15637099892069883,
+                  "recall_at_10": 0.08531392146393231,
+                  "catalog_coverage": 0.12685643564356436,
+                  "unique_recommended_items": 205,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "history_auto": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.15938098391539088,
+                "recall_at_10": 0.08680433569174567,
+                "catalog_coverage": 0.12685643564356436,
+                "unique_recommended_items": 205,
+                "fallback_users": 2,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.2738793570855016,
+                "recall_at_10": 0.0789665776428562,
+                "catalog_coverage": 0.12685643564356436,
+                "unique_recommended_items": 205,
+                "fallback_users": 194,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.15637099892069883,
+                  "recall_at_10": 0.08531392146393231,
+                  "catalog_coverage": 0.12685643564356436,
+                  "unique_recommended_items": 205,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            },
+            "bpr_full_profile_reference": {
+              "warm_primary": {
+                "eligible_users": 95,
+                "ndcg_at_10": 0.17322205265229754,
+                "recall_at_10": 0.12070566545338744,
+                "catalog_coverage": 0.20853960396039603,
+                "unique_recommended_items": 337,
+                "fallback_users": 1,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "all_eligible_secondary": {
+                "eligible_users": 287,
+                "ndcg_at_10": 0.27846089551757874,
+                "recall_at_10": 0.09018827216326025,
+                "catalog_coverage": 0.20853960396039603,
+                "unique_recommended_items": 337,
+                "fallback_users": 193,
+                "retained_positive_min": 0,
+                "retained_positive_max": 371
+              },
+              "full_history_bins": {
+                "0": {
+                  "eligible_users": 193,
+                  "ndcg_at_10": 0.33135143368271985,
+                  "recall_at_10": 0.0759186010903158,
+                  "catalog_coverage": 0.006188118811881188,
+                  "unique_recommended_items": 10,
+                  "fallback_users": 193,
+                  "retained_positive_min": 0,
+                  "retained_positive_max": 0
+                },
+                "1-2": {
+                  "eligible_users": 1,
+                  "metrics_suppressed": true,
+                  "reason": "Fewer than5 users; individual-level audit remains private"
+                },
+                "3-4": {
+                  "eligible_users": 0,
+                  "ndcg_at_10": null,
+                  "recall_at_10": null,
+                  "catalog_coverage": 0.0,
+                  "unique_recommended_items": 0,
+                  "fallback_users": 0,
+                  "retained_positive_min": null,
+                  "retained_positive_max": null
+                },
+                "5+": {
+                  "eligible_users": 93,
+                  "ndcg_at_10": 0.16857986370478825,
+                  "recall_at_10": 0.1191171822212752,
+                  "catalog_coverage": 0.20606435643564355,
+                  "unique_recommended_items": 333,
+                  "fallback_users": 0,
+                  "retained_positive_min": 5,
+                  "retained_positive_max": 371
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "hardware": {
+    "system": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel"
+  },
+  "python": "3.12.9",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "torch": "2.4.0",
+    "matplotlib": "3.10.0"
+  },
+  "cohort": {
+    "eligible_warm": 95,
+    "eligible_cold": 192,
+    "excluded_future_users_without_eligible_positive": 14,
+    "future_positive_pairs_outside_train_catalog": 95,
+    "training_catalog": 1616,
+    "full_history_bin_supports": {
+      "0": 193,
+      "1-2": 1,
+      "3-4": 0,
+      "5+": 93
+    }
+  },
+  "baseline_reproduction_passed": true,
+  "independent_metric_oracles_passed": true,
+  "all_candidates_and_split_hashes_passed": true,
+  "runtime_seconds_observed": 27.500197099987417,
+  "finished_at": "2026-10-26T16:03:47.640521+00:00",
+  "restricted_audit_sha256": {
+    "predictions-13.jsonl": "ef6f42b2680323ce1f851aa3ee2b4200f7e488b77c7280cfe4203f2b55471e60",
+    "predictions-29.jsonl": "77c3404bd10dff9339f36e0f0dee8764647c70c7bb2f8c72a71eaf90a3a71dee",
+    "predictions-47.jsonl": "2c357818f3544a3d3911073cdc1e9717197e67be3a40df2f35fa56c3793ee3bc"
+  },
+  "public_privacy_policy": "After execution, before release: suppress metrics for every full-history bin with1..4 users; supports retained, all seed/method metrics remain in restricted audit. No performance-based suppression."
+}

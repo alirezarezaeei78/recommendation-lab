@@ -18,7 +18,7 @@ $('run').addEventListener('click',async()=>{
     const response=await fetch('/api/recommend',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request)});
     const result=await response.json();if(version!==requestVersion)return;if(!response.ok)throw new Error(result.error);
     saved=result;if(profile){$('liked').value=result.liked.join(',');$('seen').value=result.seen.filter(x=>!result.liked.includes(x)).join(',');}
-    $('summary').textContent=`${result.effective_method} · ${result.candidate_count} candidates · ${result.ranking.length} returned${result.fallback?' · '+(result.fallback_reason||'Explicit popularity fallback: no positive neighbor score.'):''}`;
+    $('summary').textContent=`${result.effective_method}${result.history_positive_count!==undefined?' · '+result.history_positive_count+' unique likes · threshold '+result.policy_min_positives:''} · ${result.candidate_count} candidates · ${result.ranking.length} returned${result.fallback?' · '+(result.fallback_reason||'Explicit popularity fallback: no positive neighbor score.'):''}`;
     for(const r of result.ranking){const row=document.createElement('tr');for(const text of [r.rank,r.item,r.score.toFixed(6),r.positive_users,r.contributors.map(x=>x[0]+': '+x[1].toFixed(6)).join('; ')||'—']){const cell=document.createElement('td');cell.textContent=text;row.append(cell);}$('rows').append(row);}
     $('json').disabled=false;$('csv').disabled=false;
   }catch(error){if(version===requestVersion){$('summary').textContent=error.message;$('summary').className='error';}}

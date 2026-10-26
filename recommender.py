@@ -104,9 +104,10 @@ class Recommender:
 def csv_export(result):
     stream = io.StringIO(newline='')
     w = csv.writer(stream)
-    w.writerow(['rank', 'item', 'score', 'positive_users', 'effective_method'])
+    context = ['requested_method', 'history_positive_count', 'policy_min_positives', 'fallback', 'fallback_reason', 'history_source'] if 'history_positive_count' in result else []
+    w.writerow(['rank', 'item', 'score', 'positive_users', 'effective_method'] + context)
     for r in result['ranking']:
-        w.writerow([r['rank'], r['item'], format(r['score'], '.17g'), r['positive_users'], result['effective_method']])
+        w.writerow([r['rank'], r['item'], format(r['score'], '.17g'), r['positive_users'], result['effective_method']] + [result.get(k) for k in context])
     return stream.getvalue()
 
 def synthetic_rows():

@@ -1,0 +1,18 @@
+{"seed": 13, "cap": 0, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1586640336664689, "factor_centroid": 0.1586640336664689, "history_auto": 0.1586640336664689}}
+{"seed": 13, "cap": 1, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.0950032580734593, "factor_centroid": 0.14435731700659715, "history_auto": 0.1586640336664689}}
+{"seed": 13, "cap": 3, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.10803468935071806, "factor_centroid": 0.15602365454460612, "history_auto": 0.15718203226196442}}
+{"seed": 13, "cap": 5, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.12714925345072764, "factor_centroid": 0.16699902531511557, "history_auto": 0.16815740303247387}}
+{"seed": 13, "cap": 10, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1473469727500726, "factor_centroid": 0.15866439385538653, "history_auto": 0.15982277157274485}}
+{"seed": 13, "cap": "all", "warm": {"popularity": 0.1586640336664689, "item_knn": 0.13415866288321018, "factor_centroid": 0.16204529036536677, "history_auto": 0.1632036680827251, "bpr_full_profile_reference": 0.1680665710273781}}
+{"seed": 29, "cap": 0, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1586640336664689, "factor_centroid": 0.1586640336664689, "history_auto": 0.1586640336664689}}
+{"seed": 29, "cap": 1, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.0950032580734593, "factor_centroid": 0.1350412967687847, "history_auto": 0.1586640336664689}}
+{"seed": 29, "cap": 3, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.10803468935071806, "factor_centroid": 0.13440372824732247, "history_auto": 0.13556210596468074}}
+{"seed": 29, "cap": 5, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.12714925345072764, "factor_centroid": 0.1341376823483869, "history_auto": 0.13529606006574524}}
+{"seed": 29, "cap": 10, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1473469727500726, "factor_centroid": 0.152666637942812, "history_auto": 0.1538250156601703}}
+{"seed": 29, "cap": "all", "warm": {"popularity": 0.1586640336664689, "item_knn": 0.13415866288321018, "factor_centroid": 0.16253678516873613, "history_auto": 0.1636951628860944, "bpr_full_profile_reference": 0.17157289842322704}}
+{"seed": 47, "cap": 0, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1586640336664689, "factor_centroid": 0.1586640336664689, "history_auto": 0.1586640336664689}}
+{"seed": 47, "cap": 1, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.0950032580734593, "factor_centroid": 0.13825910033630243, "history_auto": 0.1586640336664689}}
+{"seed": 47, "cap": 3, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.10803468935071806, "factor_centroid": 0.1428295373749161, "history_auto": 0.1425262051567633}}
+{"seed": 47, "cap": 5, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.12714925345072764, "factor_centroid": 0.16320447664214185, "history_auto": 0.16290114442398906}}
+{"seed": 47, "cap": 10, "warm": {"popularity": 0.1586640336664689, "item_knn": 0.1473469727500726, "factor_centroid": 0.1610739181264956, "history_auto": 0.1607705859083428}}
+{"seed": 47, "cap": "all", "warm": {"popularity": 0.1586640336664689, "item_knn": 0.13415866288321018, "factor_centroid": 0.15968431613354367, "history_auto": 0.15938098391539088, "bpr_full_profile_reference": 0.17322205265229754}}

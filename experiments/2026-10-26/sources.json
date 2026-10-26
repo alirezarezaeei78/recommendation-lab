@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-26T19:42:32.504559+03:30",
+  "sources": [
+    {
+      "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+      "fetched_bytes": 6748,
+      "provider_readme_sha256": "fc0be8d2cd0f597d904bcf74f792c58ae547f8588286f5f0f794c68578353310",
+      "claim": "MovieLens100K data provenance, attribution and restricted research terms",
+      "license": "No redistribution or commercial/revenue-bearing use without separate permission; research use with attribution, no endorsement",
+      "public_release": "Authored code, protocol, hashes and aggregate metrics only; no data, factors or row-level audit"
+    },
+    {
+      "url": "https://arxiv.org/abs/1205.2618",
+      "version": "v1,9May2012; paper appearsUAI2009",
+      "claim": "BPR is an established pairwise-ranking approach. Prior code uses declared minibatch Adam variant. New centroid is an authored heuristic, not the BPR user model or a reproduced paper result."
+    }
+  ],
+  "paper_reported_metrics_used": false,
+  "code_and_authored_synthetic_assets_license": "MIT; unchanged repository LICENSE",
+  "raw_benchmark_and_per_user_predictions_public": false
+}

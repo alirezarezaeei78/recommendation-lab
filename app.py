@@ -5,7 +5,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 from recommender import Recommender, synthetic_rows, read_rows, csv_export
-from bpr import BPRRecommender
+from history_policy import HistoryRecommender
 
 ROOT = Path(__file__).resolve().parent
 
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     parser.add_argument('--port', type=int, default=8765)
     parser.add_argument('--bpr-seed', type=int, default=13, help='Fixed default seed; not chosen from test results')
     args = parser.parse_args()
-    model = BPRRecommender(read_rows(args.data) if args.data else synthetic_rows(), seed=args.bpr_seed)
+    model = HistoryRecommender(read_rows(args.data) if args.data else synthetic_rows(), seed=args.bpr_seed)
     server = ThreadingHTTPServer(('127.0.0.1', args.port), handler_for(model, not args.data))
     print(f'Open http://127.0.0.1:{server.server_port}; local processing; synthetic={not bool(args.data)}', flush=True)
     server.serve_forever()
