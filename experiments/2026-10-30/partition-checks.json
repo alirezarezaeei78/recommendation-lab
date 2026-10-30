@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-30T13:40:46.060965+00:00",
+  "postfit_diagnostic_only": true,
+  "model_or_protocol_changed": false,
+  "partitions": {
+    "original_past": {
+      "rows": 80003,
+      "sha256_canonical_lines": "64de5df330496e34c0b8115e3ddc442639bdd4cacc4142819c8974e3f71cb776"
+    },
+    "fitting": {
+      "rows": 65255,
+      "sha256_canonical_lines": "7db660c14143561e15a4df43c8b169d98a8aa887a56da6372e1800da95af4be5"
+    },
+    "future": {
+      "rows": 19997,
+      "sha256_canonical_lines": "73e3e9f5813cfd74b2814879fa98f976062b8faa0c0624ad9b7c53c826ef3376"
+    }
+  },
+  "cold_items_in_fitting": 0,
+  "fitting_max_time": 889237269,
+  "future_min_time": 889237297
+}

@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-30T13:40:45.976409+00:00",
+  "sources": [
+    {
+      "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+      "provider": "GroupLens Research, University of Minnesota",
+      "version": "MovieLens100K 1998 files; provider README retrieved30October2026",
+      "licence": "Research use; no redistribution or commercial use without separate permission",
+      "attribution": "Harper and Konstan(2015), The MovieLens Datasets: History and Context, DOI10.1145/2827872",
+      "claims": "u.data rating/timestamp format; u.item19binary genre flags;100000 ratings; restrictive terms",
+      "public_release": "Code, hashes and aggregate results only; no provider records/metadata/factors"
+    },
+    {
+      "url": "https://scikit-learn.org/1.4/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html",
+      "version": "1.4.2, matches installed environment",
+      "claims": "SmoothIDF log((1+N)/(1+df))+1 and L2 row normalization",
+      "scope": "Established transformation; binary genre counts used as inputs"
+    },
+    {
+      "url": "https://arxiv.org/abs/1205.2618",
+      "version": "BPR paper, Rendle et al. original2009; existing app implementation variant",
+      "claims": "Pairwise positive/unobserved ranking motivation; this app uses minibatchAdam variant",
+      "scope": "Not exact paper reproduction or reported metric claim"
+    }
+  ],
+  "authored_code_and_synthetic_assets": "MIT; existing LICENSE preserved",
+  "third_party_artwork_used": false
+}

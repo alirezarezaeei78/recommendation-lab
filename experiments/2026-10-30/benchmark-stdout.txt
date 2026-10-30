@@ -1,0 +1,76 @@
+Fitting catalog BPR seed 13
+{"seed": 13, "results": {"popularity": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.15996667986831153, "recall_at_10": 0.11674723367187613, "coverage_denominator_items": 1616, "unique_recommended_items": 75, "coverage": 0.04641089108910891}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.16790251241064846, "recall_at_10": 0.13868997504693847, "coverage_denominator_items": 1298, "unique_recommended_items": 75, "coverage": 0.05778120184899846}}, "collaborative": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.12906373521191683, "recall_at_10": 0.08321166059943454, "coverage_denominator_items": 1616, "unique_recommended_items": 310, "coverage": 0.19183168316831684}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.13667773809241465, "recall_at_10": 0.10016553178020103, "coverage_denominator_items": 1298, "unique_recommended_items": 310, "coverage": 0.23882896764252695}}, "content": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.06590932381757161, "recall_at_10": 0.038529845021523144, "coverage_denominator_items": 1616, "unique_recommended_items": 225, "coverage": 0.13923267326732675}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.03140972178163753, "recall_at_10": 0.041995207173778595, "coverage_denominator_items": 318, "unique_recommended_items": 18, "coverage": 0.05660377358490566}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.05809105302611078, "recall_at_10": 0.03370527512440547, "coverage_denominator_items": 1298, "unique_recommended_items": 207, "coverage": 0.15947611710323575}}, "hybrid": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.131623026331408, "recall_at_10": 0.07770690008666971, "coverage_denominator_items": 1616, "unique_recommended_items": 292, "coverage": 0.1806930693069307}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.14023556641339163, "recall_at_10": 0.09623193352287884, "coverage_denominator_items": 1298, "unique_recommended_items": 292, "coverage": 0.22496147919876733}}}}
+Fitting catalog BPR seed 29
+{"seed": 29, "results": {"popularity": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.15996667986831153, "recall_at_10": 0.11674723367187613, "coverage_denominator_items": 1616, "unique_recommended_items": 75, "coverage": 0.04641089108910891}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.16790251241064846, "recall_at_10": 0.13868997504693847, "coverage_denominator_items": 1298, "unique_recommended_items": 75, "coverage": 0.05778120184899846}}, "collaborative": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.16904817663257493, "recall_at_10": 0.10073649428828357, "coverage_denominator_items": 1616, "unique_recommended_items": 306, "coverage": 0.18935643564356436}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.17798976535236363, "recall_at_10": 0.12459837378121788, "coverage_denominator_items": 1298, "unique_recommended_items": 306, "coverage": 0.2357473035439137}}, "content": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.06590932381757161, "recall_at_10": 0.038529845021523144, "coverage_denominator_items": 1616, "unique_recommended_items": 225, "coverage": 0.13923267326732675}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.03140972178163753, "recall_at_10": 0.041995207173778595, "coverage_denominator_items": 318, "unique_recommended_items": 18, "coverage": 0.05660377358490566}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.05809105302611078, "recall_at_10": 0.03370527512440547, "coverage_denominator_items": 1298, "unique_recommended_items": 207, "coverage": 0.15947611710323575}}, "hybrid": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.1447231366950845, "recall_at_10": 0.09235436555318492, "coverage_denominator_items": 1616, "unique_recommended_items": 281, "coverage": 0.17388613861386137}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.15494082883181623, "recall_at_10": 0.11285415555729546, "coverage_denominator_items": 1298, "unique_recommended_items": 281, "coverage": 0.21648690292758088}}}}
+Fitting catalog BPR seed 47
+{"seed": 47, "results": {"popularity": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.15996667986831153, "recall_at_10": 0.11674723367187613, "coverage_denominator_items": 1616, "unique_recommended_items": 75, "coverage": 0.04641089108910891}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.16790251241064846, "recall_at_10": 0.13868997504693847, "coverage_denominator_items": 1298, "unique_recommended_items": 75, "coverage": 0.05778120184899846}}, "collaborative": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.16788999920817804, "recall_at_10": 0.12023549148775552, "coverage_denominator_items": 1616, "unique_recommended_items": 325, "coverage": 0.20111386138613863}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.1745970393008747, "recall_at_10": 0.1397731738765048, "coverage_denominator_items": 1298, "unique_recommended_items": 325, "coverage": 0.25038520801232667}}, "content": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.06590932381757161, "recall_at_10": 0.038529845021523144, "coverage_denominator_items": 1616, "unique_recommended_items": 225, "coverage": 0.13923267326732675}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.03140972178163753, "recall_at_10": 0.041995207173778595, "coverage_denominator_items": 318, "unique_recommended_items": 18, "coverage": 0.05660377358490566}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.05809105302611078, "recall_at_10": 0.03370527512440547, "coverage_denominator_items": 1298, "unique_recommended_items": 207, "coverage": 0.15947611710323575}}, "hybrid": {"all": {"eligible_users": 94, "relevant_pairs": 1554, "ndcg_at_10": 0.13901634860770262, "recall_at_10": 0.08331962493621242, "coverage_denominator_items": 1616, "unique_recommended_items": 280, "coverage": 0.17326732673267325}, "cold": {"eligible_users": 56, "relevant_pairs": 271, "ndcg_at_10": 0.0, "recall_at_10": 0.0, "coverage_denominator_items": 318, "unique_recommended_items": 0, "coverage": 0.0}, "warm": {"eligible_users": 93, "relevant_pairs": 1283, "ndcg_at_10": 0.14728260129411108, "recall_at_10": 0.09959932056826915, "coverage_denominator_items": 1298, "unique_recommended_items": 280, "coverage": 0.21571648690292758}}}}
+{
+  "popularity": {
+    "all": {
+      "ndcg_at_10": 0.15996667986831153,
+      "recall_at_10": 0.11674723367187613,
+      "coverage": 0.04641089108910892
+    },
+    "cold": {
+      "ndcg_at_10": 0.0,
+      "recall_at_10": 0.0,
+      "coverage": 0.0
+    },
+    "warm": {
+      "ndcg_at_10": 0.16790251241064846,
+      "recall_at_10": 0.13868997504693847,
+      "coverage": 0.05778120184899846
+    }
+  },
+  "collaborative": {
+    "all": {
+      "ndcg_at_10": 0.15533397035088994,
+      "recall_at_10": 0.10139454879182454,
+      "coverage": 0.1941006600660066
+    },
+    "cold": {
+      "ndcg_at_10": 0.0,
+      "recall_at_10": 0.0,
+      "coverage": 0.0
+    },
+    "warm": {
+      "ndcg_at_10": 0.16308818091521768,
+      "recall_at_10": 0.12151235981264123,
+      "coverage": 0.2416538263995891
+    }
+  },
+  "content": {
+    "all": {
+      "ndcg_at_10": 0.06590932381757161,
+      "recall_at_10": 0.038529845021523144,
+      "coverage": 0.13923267326732675
+    },
+    "cold": {
+      "ndcg_at_10": 0.03140972178163753,
+      "recall_at_10": 0.0419952071737786,
+      "coverage": 0.05660377358490567
+    },
+    "warm": {
+      "ndcg_at_10": 0.05809105302611078,
+      "recall_at_10": 0.03370527512440547,
+      "coverage": 0.15947611710323575
+    }
+  },
+  "hybrid": {
+    "all": {
+      "ndcg_at_10": 0.13845417054473172,
+      "recall_at_10": 0.08446029685868901,
+      "coverage": 0.17594884488448845
+    },
+    "cold": {
+      "ndcg_at_10": 0.0,
+      "recall_at_10": 0.0,
+      "coverage": 0.0
+    },
+    "warm": {
+      "ndcg_at_10": 0.147486332179773,
+      "recall_at_10": 0.10289513654948114,
+      "coverage": 0.2190549563430919
+    }
+  }
+}

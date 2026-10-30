@@ -1,0 +1,119 @@
+{
+  "local_unittests_passed": 62,
+  "new_numerical_workflow_tests": 7,
+  "actual_cli_workflows": [
+    {
+      "method": "popularity",
+      "exit_code": 0,
+      "candidate_count": 12,
+      "new_item": {
+        "rank": 12,
+        "item": "NEW",
+        "score": 0.0,
+        "cold_item": true,
+        "content_score": 1.0,
+        "collaborative_score": null,
+        "content_rank": 4,
+        "collaborative_rank": null,
+        "positive_users": 0
+      },
+      "csv_json_exact": true
+    },
+    {
+      "method": "collaborative",
+      "exit_code": 0,
+      "candidate_count": 12,
+      "new_item": {
+        "rank": 12,
+        "item": "NEW",
+        "score": 0.0,
+        "cold_item": true,
+        "content_score": 1.0,
+        "collaborative_score": null,
+        "content_rank": 4,
+        "collaborative_rank": null,
+        "positive_users": 0
+      },
+      "csv_json_exact": true
+    },
+    {
+      "method": "content",
+      "exit_code": 0,
+      "candidate_count": 12,
+      "new_item": {
+        "rank": 4,
+        "item": "NEW",
+        "score": 1.0,
+        "cold_item": true,
+        "content_score": 1.0,
+        "collaborative_score": null,
+        "content_rank": 4,
+        "collaborative_rank": null,
+        "positive_users": 0
+      },
+      "csv_json_exact": true
+    },
+    {
+      "method": "hybrid",
+      "exit_code": 0,
+      "candidate_count": 12,
+      "new_item": {
+        "rank": 5,
+        "item": "NEW",
+        "score": 0.015625,
+        "cold_item": true,
+        "content_score": 1.0,
+        "collaborative_score": null,
+        "content_rank": 4,
+        "collaborative_rank": null,
+        "positive_users": 0
+      },
+      "csv_json_exact": true
+    }
+  ],
+  "actual_cli_error_checks": [
+    {
+      "arguments": [
+        "--liked",
+        "BAD"
+      ],
+      "exit_code": 2,
+      "error": "catalog_cli.py: error: Unknown item ID"
+    },
+    {
+      "arguments": [
+        "--n",
+        "0"
+      ],
+      "exit_code": 2,
+      "error": "catalog_cli.py: error: n must be1..100"
+    },
+    {
+      "arguments": [
+        "--new-item",
+        "{}"
+      ],
+      "exit_code": 2,
+      "error": "catalog_cli.py: error: --new-item requires exactly id and tags"
+    },
+    {
+      "arguments": [
+        "--data",
+        "missing.csv"
+      ],
+      "exit_code": 2,
+      "error": "catalog_cli.py: error: Provide both --data and --catalog, or neither for synthetic demo"
+    },
+    {
+      "arguments": [
+        "--new-item",
+        "broken"
+      ],
+      "exit_code": 2,
+      "error": "catalog_cli.py: error: Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "empty_history_popularity_fallback_verified": true,
+  "independent_saved_metric_rows": 2916,
+  "independent_saved_hybrid_score_rows": 2820
+}

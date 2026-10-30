@@ -1,5 +1,10 @@
 # Recommendation Explorer
 
+New: [metadata-only catalog workflow and measured cold-item comparison](experiments/2026-10-30/README.md).
+Add an authored item with no interactions, inspect content/hybrid components and
+export JSON/CSV through the local catalog CLI/API. The hybrid failed to retrieve
+cold items in the declared top10 experiment; all negative results are retained.
+
 A local workbench for recommender developers and product analysts: select liked
 and seen items, compare BPR matrix factorization, item-neighborhood ranking and popularity,
 inspect contributing history, then export the exact results as JSON or CSV.

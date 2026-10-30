@@ -1,0 +1,84 @@
+test_catalog_synthetic_profiles_and_seed (test_bpr.BPRAPIWorkflow.test_catalog_synthetic_profiles_and_seed) ... 127.0.0.1 - - [30/Oct/2026 17:08:03] "GET /api/catalog HTTP/1.1" 200 -
+ok
+test_selected_user_api_and_export_parity (test_bpr.BPRAPIWorkflow.test_selected_user_api_and_export_parity) ... 127.0.0.1 - - [30/Oct/2026 17:08:03] "POST /api/recommend HTTP/1.1" 200 -
+ok
+test_unknown_and_malformed_user_are_errors (test_bpr.BPRAPIWorkflow.test_unknown_and_malformed_user_are_errors) ... 127.0.0.1 - - [30/Oct/2026 17:08:03] "POST /api/recommend HTTP/1.1" 400 -
+127.0.0.1 - - [30/Oct/2026 17:08:03] "POST /api/recommend HTTP/1.1" 400 -
+127.0.0.1 - - [30/Oct/2026 17:08:03] "POST /api/recommend HTTP/1.1" 400 -
+ok
+test_empty_positive_or_all_seen_profiles (test_bpr.BPRChecks.test_empty_positive_or_all_seen_profiles) ... ok
+test_explicit_fallback_and_custom_history_validation (test_bpr.BPRChecks.test_explicit_fallback_and_custom_history_validation) ... ok
+test_export_and_factor_reload_parity (test_bpr.BPRChecks.test_export_and_factor_reload_parity) ... ok
+test_full_seen_negative_sampling_rejects_without_hanging (test_bpr.BPRChecks.test_full_seen_negative_sampling_rejects_without_hanging) ... ok
+test_independent_pair_loss_and_finite_difference_gradient (test_bpr.BPRChecks.test_independent_pair_loss_and_finite_difference_gradient) ... ok
+test_negatives_exclude_every_seen_rating_and_are_repeatable (test_bpr.BPRChecks.test_negatives_exclude_every_seen_rating_and_are_repeatable) ... ok
+test_no_future_interactions_enter_training (test_bpr.BPRChecks.test_no_future_interactions_enter_training) ... ok
+test_same_candidates_for_all_methods_no_seen_or_duplicates (test_bpr.BPRChecks.test_same_candidates_for_all_methods_no_seen_or_duplicates) ... ok
+test_same_seed_reordered_rows_exact_factors (test_bpr.BPRChecks.test_same_seed_reordered_rows_exact_factors) ... ok
+test_scores_match_independent_scalar_dot_product (test_bpr.BPRChecks.test_scores_match_independent_scalar_dot_product) ... ok
+test_cold_item_content_and_export (test_catalog.CatalogChecks.test_cold_item_content_and_export) ... ok
+test_cold_query_and_zero_metadata (test_catalog.CatalogChecks.test_cold_query_and_zero_metadata) ... ok
+test_fallbacks_and_exclusion (test_catalog.CatalogChecks.test_fallbacks_and_exclusion) ... ok
+test_hybrid_scalar (test_catalog.CatalogChecks.test_hybrid_scalar) ... ok
+test_idf_scalar_and_add_frozen (test_catalog.CatalogChecks.test_idf_scalar_and_add_frozen) ... ok
+test_unknown_and_invalid (test_catalog.CatalogChecks.test_unknown_and_invalid) ... ok
+test_user_profile_and_scalar_cosine (test_catalog.CatalogChecks.test_user_profile_and_scalar_cosine) ... ok
+test_malformed_unknown_items_and_no_stale_success (test_history.HistoryAPIWorkflow.test_malformed_unknown_items_and_no_stale_success) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 400 -
+127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 400 -
+ok
+test_new_user_and_exact_api_export (test_history.HistoryAPIWorkflow.test_new_user_and_exact_api_export) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 200 -
+ok
+test_boundary_uses_unique_positive_count (test_history.HistoryChecks.test_boundary_uses_unique_positive_count) ... ok
+test_centroid_matches_independent_scalar_oracle (test_history.HistoryChecks.test_centroid_matches_independent_scalar_oracle) ... ok
+test_empty_candidates_finite_and_repeatable (test_history.HistoryChecks.test_empty_candidates_finite_and_repeatable) ... ok
+test_known_profile_conflict_and_invalid_request (test_history.HistoryChecks.test_known_profile_conflict_and_invalid_request) ... ok
+test_no_hidden_fitted_user_vector (test_history.HistoryChecks.test_no_hidden_fitted_user_vector) ... ok
+test_no_learned_positive_pairs_do_not_use_random_vectors (test_history.HistoryChecks.test_no_learned_positive_pairs_do_not_use_random_vectors) ... ok
+test_policy_csv_metadata_and_full_precision (test_history.HistoryChecks.test_policy_csv_metadata_and_full_precision) ... ok
+test_seen_exclusion_all_methods_same_candidates (test_history.HistoryChecks.test_seen_exclusion_all_methods_same_candidates) ... ok
+test_small_public_bin_suppression (test_history.HistoryChecks.test_small_public_bin_suppression) ... ok
+test_unknown_user_safe_history_and_unknown_items (test_history.HistoryChecks.test_unknown_user_safe_history_and_unknown_items) ... ok
+test_api_unknown_fields_error (test_recommender.APIWorkflow.test_api_unknown_fields_error) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 400 -
+ok
+test_api_unknown_item_error (test_recommender.APIWorkflow.test_api_unknown_item_error) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 400 -
+ok
+test_catalog_synthetic_flag_and_security_headers (test_recommender.APIWorkflow.test_catalog_synthetic_flag_and_security_headers) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "GET /api/catalog HTTP/1.1" 200 -
+ok
+test_cross_origin_error (test_recommender.APIWorkflow.test_cross_origin_error) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 403 -
+ok
+test_oversize_body_rejected (test_recommender.APIWorkflow.test_oversize_body_rejected) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 413 -
+ok
+test_primary_workflow_api_and_engine_parity (test_recommender.APIWorkflow.test_primary_workflow_api_and_engine_parity) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "POST /api/recommend HTTP/1.1" 200 -
+ok
+test_restricted_files_not_served (test_recommender.APIWorkflow.test_restricted_files_not_served) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "GET /PROTOCOL.md HTTP/1.1" 404 -
+ok
+test_unexpected_host_rejected (test_recommender.APIWorkflow.test_unexpected_host_rejected) ... 127.0.0.1 - - [30/Oct/2026 17:08:04] "GET /api/catalog HTTP/1.1" 403 -
+ok
+test_all_seen_empty_result (test_recommender.ModelChecks.test_all_seen_empty_result) ... ok
+test_authored_demo_has_no_seen_recommendations (test_recommender.ModelChecks.test_authored_demo_has_no_seen_recommendations) ... ok
+test_cold_history_fallback (test_recommender.ModelChecks.test_cold_history_fallback) ... ok
+test_contributor_sum_matches_score (test_recommender.ModelChecks.test_contributor_sum_matches_score) ... ok
+test_deterministic_lexical_ties (test_recommender.ModelChecks.test_deterministic_lexical_ties) ... ok
+test_duplicate_pairs_rejected (test_recommender.ModelChecks.test_duplicate_pairs_rejected) ... ok
+test_exports_match_actual_scores (test_recommender.ModelChecks.test_exports_match_actual_scores) ... ok
+test_full_candidate_count_and_seen_dislikes (test_recommender.ModelChecks.test_full_candidate_count_and_seen_dislikes) ... ok
+test_ids_and_negative_time_rejected (test_recommender.ModelChecks.test_ids_and_negative_time_rejected) ... ok
+test_independent_cosine_and_shrinkage (test_recommender.ModelChecks.test_independent_cosine_and_shrinkage) ... ok
+test_independent_ndcg_and_recall (test_recommender.ModelChecks.test_independent_ndcg_and_recall) ... ok
+test_invalid_method_rejected (test_recommender.ModelChecks.test_invalid_method_rejected) ... ok
+test_invalid_n_rejected (test_recommender.ModelChecks.test_invalid_n_rejected) ... ok
+test_metric_duplicate_ranks_rejected (test_recommender.ModelChecks.test_metric_duplicate_ranks_rejected) ... ok
+test_nan_ratings_rejected (test_recommender.ModelChecks.test_nan_ratings_rejected) ... ok
+test_no_repeated_ranking_ids (test_recommender.ModelChecks.test_no_repeated_ranking_ids) ... ok
+test_recall_denominator_not_top_k (test_recommender.ModelChecks.test_recall_denominator_not_top_k) ... ok
+test_reorder_invariant (test_recommender.ModelChecks.test_reorder_invariant) ... ok
+test_repeat_exact (test_recommender.ModelChecks.test_repeat_exact) ... ok
+test_top_neighbor_pruning (test_recommender.ModelChecks.test_top_neighbor_pruning) ... ok
+test_unknown_input_rejected (test_recommender.ModelChecks.test_unknown_input_rejected) ... ok
+test_zero_positive_item_is_finite (test_recommender.ModelChecks.test_zero_positive_item_is_finite) ... ok
+
+----------------------------------------------------------------------
+Ran 62 tests in 2.269s
+
+OK

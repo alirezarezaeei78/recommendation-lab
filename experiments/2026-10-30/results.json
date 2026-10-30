@@ -1,0 +1,905 @@
+{
+  "date": "2026-10-30",
+  "status": "completed",
+  "protocol_sha256": "aa105f99e60b9af9b15d519396fb8c5cf37cb643819ce90c6e6707a4d48c1f33",
+  "input_hashes": {
+    "u.data": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+    "u.item": "553841ebc7de3a0fd0d6b62a204ea30c1e651aacfb2814c7a6584ac52f2c5701"
+  },
+  "cutoff": 889237269,
+  "counts": {
+    "original_past_rows": 80003,
+    "fit_rows": 65255,
+    "removed_past_rows": 14748,
+    "future_rows": 19997,
+    "catalog_items": 1616,
+    "cold_items": 318,
+    "warm_items": 1298,
+    "future_users": 301,
+    "eligible_primary_users": 94,
+    "excluded_future_users": 207,
+    "future_positive_pairs_outside_catalog": 95
+  },
+  "exposure": "Known19/23/26October time split; new label-independent simulated item mask; exploratory, not independent validation",
+  "caveats": [
+    "Catalog-cold interaction deletion is simulated; original past seen exclusion is oracle side information",
+    "Fixed metadata snapshot assumed available at cutoff, not historically verified",
+    "Warm-positive users only; historical observed ratings, not clicks, revenue or first-launch performance",
+    "Cold/warm relevance cohorts differ; same full rankings, no subgroup reranking",
+    "Seed spread is optimizer sensitivity, not confidence interval; no parameter tuning"
+  ],
+  "environment": {
+    "python": "3.12.9",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "torch": "2.4.0",
+      "scikit-learn": "1.4.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.10.0"
+    }
+  },
+  "runs": [
+    {
+      "seed": 13,
+      "training": {
+        "seed": 13,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 36012,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6901167499135895
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.5777165831876545
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.3160388876163574
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.24290577430076551
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.2178163033458348
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.19204231669978805
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.17496562116307363
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.15901413312802298
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.14145956717172517
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.12947004351909328
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.12228498187883952
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.11443166514045726
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.10747369916475072
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.10102721454815032
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.09819205776295582
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.0906932945666837
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08843136543957747
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.08503451584399203
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.08330536204885008
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07598894896999699
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.07550590792030516
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.07268385095893178
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.07015267906413203
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.06900594657981951
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.06567884592220848
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.06276955097619129
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.06285137446220883
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.06096206601213829
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.06022582543114086
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.056930363084324385
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.643985499991686
+      },
+      "results": {
+        "popularity": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.15996667986831153,
+            "recall_at_10": 0.11674723367187613,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 75,
+            "coverage": 0.04641089108910891
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.16790251241064846,
+            "recall_at_10": 0.13868997504693847,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 75,
+            "coverage": 0.05778120184899846
+          }
+        },
+        "collaborative": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.12906373521191683,
+            "recall_at_10": 0.08321166059943454,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 310,
+            "coverage": 0.19183168316831684
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.13667773809241465,
+            "recall_at_10": 0.10016553178020103,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 310,
+            "coverage": 0.23882896764252695
+          }
+        },
+        "content": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.06590932381757161,
+            "recall_at_10": 0.038529845021523144,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 225,
+            "coverage": 0.13923267326732675
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.03140972178163753,
+            "recall_at_10": 0.041995207173778595,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 18,
+            "coverage": 0.05660377358490566
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.05809105302611078,
+            "recall_at_10": 0.03370527512440547,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 207,
+            "coverage": 0.15947611710323575
+          }
+        },
+        "hybrid": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.131623026331408,
+            "recall_at_10": 0.07770690008666971,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 292,
+            "coverage": 0.1806930693069307
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.14023556641339163,
+            "recall_at_10": 0.09623193352287884,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 292,
+            "coverage": 0.22496147919876733
+          }
+        }
+      },
+      "genre_features": 19
+    },
+    {
+      "seed": 29,
+      "training": {
+        "seed": 29,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 36012,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6894903688593387
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.5709979804002032
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.3099994587491754
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.23524601595157862
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.21405732812920397
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.18600469434226896
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.1658720025221904
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.14833203309491702
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.13543181034703128
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.12533202509005892
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.12001147796402478
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.11094003390530328
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.10596327187302483
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.10184551234806324
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.0970632168101785
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.09363937621399732
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08661343895977211
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.08481767421084935
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.08012114663852608
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07725367302330126
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.07607194208379164
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.07385839485885778
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.07010239290304612
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.06872983715909396
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.06352901677962583
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.06656973339939176
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.06330241943420628
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.06072772085156876
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.060252782695990964
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.06122201165604575
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.8223477999999886
+      },
+      "results": {
+        "popularity": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.15996667986831153,
+            "recall_at_10": 0.11674723367187613,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 75,
+            "coverage": 0.04641089108910891
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.16790251241064846,
+            "recall_at_10": 0.13868997504693847,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 75,
+            "coverage": 0.05778120184899846
+          }
+        },
+        "collaborative": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.16904817663257493,
+            "recall_at_10": 0.10073649428828357,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 306,
+            "coverage": 0.18935643564356436
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.17798976535236363,
+            "recall_at_10": 0.12459837378121788,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 306,
+            "coverage": 0.2357473035439137
+          }
+        },
+        "content": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.06590932381757161,
+            "recall_at_10": 0.038529845021523144,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 225,
+            "coverage": 0.13923267326732675
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.03140972178163753,
+            "recall_at_10": 0.041995207173778595,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 18,
+            "coverage": 0.05660377358490566
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.05809105302611078,
+            "recall_at_10": 0.03370527512440547,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 207,
+            "coverage": 0.15947611710323575
+          }
+        },
+        "hybrid": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.1447231366950845,
+            "recall_at_10": 0.09235436555318492,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 281,
+            "coverage": 0.17388613861386137
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.15494082883181623,
+            "recall_at_10": 0.11285415555729546,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 281,
+            "coverage": 0.21648690292758088
+          }
+        }
+      },
+      "genre_features": 19
+    },
+    {
+      "seed": 47,
+      "training": {
+        "seed": 47,
+        "factors": 32,
+        "epochs_requested": 30,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "regularization": 0.0001,
+        "positive_pairs": 36012,
+        "trained_users": 749,
+        "history": [
+          {
+            "epoch": 1,
+            "sampled_training_objective": 0.6899068093718284
+          },
+          {
+            "epoch": 2,
+            "sampled_training_objective": 0.5782845985931806
+          },
+          {
+            "epoch": 3,
+            "sampled_training_objective": 0.31838761627058393
+          },
+          {
+            "epoch": 4,
+            "sampled_training_objective": 0.23849683145801187
+          },
+          {
+            "epoch": 5,
+            "sampled_training_objective": 0.2108548210486298
+          },
+          {
+            "epoch": 6,
+            "sampled_training_objective": 0.18456197596319276
+          },
+          {
+            "epoch": 7,
+            "sampled_training_objective": 0.1688109713618019
+          },
+          {
+            "epoch": 8,
+            "sampled_training_objective": 0.15404132998984058
+          },
+          {
+            "epoch": 9,
+            "sampled_training_objective": 0.13699991828922853
+          },
+          {
+            "epoch": 10,
+            "sampled_training_objective": 0.12940974460566532
+          },
+          {
+            "epoch": 11,
+            "sampled_training_objective": 0.11779074113487893
+          },
+          {
+            "epoch": 12,
+            "sampled_training_objective": 0.11260877099948685
+          },
+          {
+            "epoch": 13,
+            "sampled_training_objective": 0.10650662753425226
+          },
+          {
+            "epoch": 14,
+            "sampled_training_objective": 0.0983838986555338
+          },
+          {
+            "epoch": 15,
+            "sampled_training_objective": 0.09547833884744185
+          },
+          {
+            "epoch": 16,
+            "sampled_training_objective": 0.09005853293005736
+          },
+          {
+            "epoch": 17,
+            "sampled_training_objective": 0.08609274322110971
+          },
+          {
+            "epoch": 18,
+            "sampled_training_objective": 0.08466267725282095
+          },
+          {
+            "epoch": 19,
+            "sampled_training_objective": 0.07999622032061214
+          },
+          {
+            "epoch": 20,
+            "sampled_training_objective": 0.07909339468495442
+          },
+          {
+            "epoch": 21,
+            "sampled_training_objective": 0.07582123858057022
+          },
+          {
+            "epoch": 22,
+            "sampled_training_objective": 0.07340136407485051
+          },
+          {
+            "epoch": 23,
+            "sampled_training_objective": 0.07180218841484569
+          },
+          {
+            "epoch": 24,
+            "sampled_training_objective": 0.0687329709384225
+          },
+          {
+            "epoch": 25,
+            "sampled_training_objective": 0.06651303745035753
+          },
+          {
+            "epoch": 26,
+            "sampled_training_objective": 0.06427350874498236
+          },
+          {
+            "epoch": 27,
+            "sampled_training_objective": 0.06275515285042621
+          },
+          {
+            "epoch": 28,
+            "sampled_training_objective": 0.06215297465759768
+          },
+          {
+            "epoch": 29,
+            "sampled_training_objective": 0.06334070132005272
+          },
+          {
+            "epoch": 30,
+            "sampled_training_objective": 0.05737948015755936
+          }
+        ],
+        "stop_reason": "epoch_limit",
+        "device": "cpu",
+        "torch_threads": 2,
+        "epochs_executed": 30,
+        "wall_seconds_observed": 1.840507400003844
+      },
+      "results": {
+        "popularity": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.15996667986831153,
+            "recall_at_10": 0.11674723367187613,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 75,
+            "coverage": 0.04641089108910891
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.16790251241064846,
+            "recall_at_10": 0.13868997504693847,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 75,
+            "coverage": 0.05778120184899846
+          }
+        },
+        "collaborative": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.16788999920817804,
+            "recall_at_10": 0.12023549148775552,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 325,
+            "coverage": 0.20111386138613863
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.1745970393008747,
+            "recall_at_10": 0.1397731738765048,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 325,
+            "coverage": 0.25038520801232667
+          }
+        },
+        "content": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.06590932381757161,
+            "recall_at_10": 0.038529845021523144,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 225,
+            "coverage": 0.13923267326732675
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.03140972178163753,
+            "recall_at_10": 0.041995207173778595,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 18,
+            "coverage": 0.05660377358490566
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.05809105302611078,
+            "recall_at_10": 0.03370527512440547,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 207,
+            "coverage": 0.15947611710323575
+          }
+        },
+        "hybrid": {
+          "all": {
+            "eligible_users": 94,
+            "relevant_pairs": 1554,
+            "ndcg_at_10": 0.13901634860770262,
+            "recall_at_10": 0.08331962493621242,
+            "coverage_denominator_items": 1616,
+            "unique_recommended_items": 280,
+            "coverage": 0.17326732673267325
+          },
+          "cold": {
+            "eligible_users": 56,
+            "relevant_pairs": 271,
+            "ndcg_at_10": 0.0,
+            "recall_at_10": 0.0,
+            "coverage_denominator_items": 318,
+            "unique_recommended_items": 0,
+            "coverage": 0.0
+          },
+          "warm": {
+            "eligible_users": 93,
+            "relevant_pairs": 1283,
+            "ndcg_at_10": 0.14728260129411108,
+            "recall_at_10": 0.09959932056826915,
+            "coverage_denominator_items": 1298,
+            "unique_recommended_items": 280,
+            "coverage": 0.21571648690292758
+          }
+        }
+      },
+      "genre_features": 19
+    }
+  ],
+  "metric_rows_independently_checked": 2916,
+  "reload_parity_checks": 1128,
+  "mean_results": {
+    "popularity": {
+      "all": {
+        "ndcg_at_10": 0.15996667986831153,
+        "recall_at_10": 0.11674723367187613,
+        "coverage": 0.04641089108910892
+      },
+      "cold": {
+        "ndcg_at_10": 0.0,
+        "recall_at_10": 0.0,
+        "coverage": 0.0
+      },
+      "warm": {
+        "ndcg_at_10": 0.16790251241064846,
+        "recall_at_10": 0.13868997504693847,
+        "coverage": 0.05778120184899846
+      }
+    },
+    "collaborative": {
+      "all": {
+        "ndcg_at_10": 0.15533397035088994,
+        "recall_at_10": 0.10139454879182454,
+        "coverage": 0.1941006600660066
+      },
+      "cold": {
+        "ndcg_at_10": 0.0,
+        "recall_at_10": 0.0,
+        "coverage": 0.0
+      },
+      "warm": {
+        "ndcg_at_10": 0.16308818091521768,
+        "recall_at_10": 0.12151235981264123,
+        "coverage": 0.2416538263995891
+      }
+    },
+    "content": {
+      "all": {
+        "ndcg_at_10": 0.06590932381757161,
+        "recall_at_10": 0.038529845021523144,
+        "coverage": 0.13923267326732675
+      },
+      "cold": {
+        "ndcg_at_10": 0.03140972178163753,
+        "recall_at_10": 0.0419952071737786,
+        "coverage": 0.05660377358490567
+      },
+      "warm": {
+        "ndcg_at_10": 0.05809105302611078,
+        "recall_at_10": 0.03370527512440547,
+        "coverage": 0.15947611710323575
+      }
+    },
+    "hybrid": {
+      "all": {
+        "ndcg_at_10": 0.13845417054473172,
+        "recall_at_10": 0.08446029685868901,
+        "coverage": 0.17594884488448845
+      },
+      "cold": {
+        "ndcg_at_10": 0.0,
+        "recall_at_10": 0.0,
+        "coverage": 0.0
+      },
+      "warm": {
+        "ndcg_at_10": 0.147486332179773,
+        "recall_at_10": 0.10289513654948114,
+        "coverage": 0.2190549563430919
+      }
+    }
+  },
+  "restricted_audit_hashes": {
+    "model-13.joblib": "d9803f701509de666e43f1674ea85604dea4647574275a2431162935938b9c48",
+    "model-29.joblib": "bb2196539c84385189c7fd57c39ecbbd5562dd7c91b1879306f79c2e15a6f649",
+    "model-47.joblib": "ae38d9448b1661c2f49bd349c33547b3b598ef09df7b7759fa139ffd0bca6f06",
+    "partition.json": "a54a04d67d25c659dbb3bf327a09806cc51d651324fc0554169181f5409914eb",
+    "predictions-13.json": "47502aeea6abed2aa7e5eb4494d4fa7147837e53ca0334daf427e9cf01dc26ef",
+    "predictions-29.json": "7ccad3486db201e0771c27e4d597973c6e2aa92f2198c7dc482bf84aedb65561",
+    "predictions-47.json": "c2a6f4493176bd40984ee8d04f9be57da006555a82081256e44708e2161c49ab"
+  },
+  "observed_run_seconds": 24.301368700005696,
+  "completed_at": "2026-10-30T13:38:02.073596+00:00"
+}
