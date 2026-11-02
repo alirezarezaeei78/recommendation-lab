@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-11-02T13:45:02.202862+00:00",
+  "assets": [
+    {
+      "path": "benchmark-stdout.txt",
+      "bytes": 8317,
+      "sha256": "c0304015b8eb303df850948b73906fe27edf299150ea19461395524eacb73f46"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 1652,
+      "sha256": "72e4101ac8480ac179f82a5e0debb985dfc208675411092d681d06891b050c91"
+    },
+    {
+      "path": "diversity-tradeoff.png",
+      "bytes": 210890,
+      "sha256": "444bbe5ab1f1b7572ad7c6b4b860af0f8954a910bcb053ed2046f0b7681a0b0d"
+    },
+    {
+      "path": "diversity-tradeoff.svg",
+      "bytes": 138769,
+      "sha256": "901207c281e3bd0f54d342f6478214d6612bbad1874591d4bd920be6bee160bc"
+    },
+    {
+      "path": "pre-execution-export-fix.json",
+      "bytes": 329,
+      "sha256": "57b5aa9b5c1af579bc08864ca1ee3a4276952aa3a43349b00818aa1b55f290a2"
+    },
+    {
+      "path": "protocol-frozen.json",
+      "bytes": 587,
+      "sha256": "478bcabf02b388d3394633c66f52e313b3d591b74742695e4f76f648865fa78d"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4558,
+      "sha256": "b0a2216002549ace4fdb45dcce1ff3cdd00b9dadc14607e373a835d2aecdc065"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5612,
+      "sha256": "3dbf6adecf80c3567d3cc5367de1c8c8444fbd90ff8ec8de44dd48b13be9ab2b"
+    },
+    {
+      "path": "results.json",
+      "bytes": 18659,
+      "sha256": "1a65cdd035836eb22d52826ba7d527651fbd5fcbcbeb41d9ee9f7f8dcdb5b6ce"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2023,
+      "sha256": "7d4df58238287c61b4d23432efb1015de4ccdbde3288e7987b0ebce2c17f636a"
+    },
+    {
+      "path": "synthetic-demo/profile-D01-base.csv",
+      "bytes": 569,
+      "sha256": "c63f2388bc1c90c1c169288d69adea4d70147f1c5fdf28eab448672a8e3e2bd2"
+    },
+    {
+      "path": "synthetic-demo/profile-D01-base.json",
+      "bytes": 5043,
+      "sha256": "92cedd469480046730bf0628fdd43dbea2a51c9a33d88b14b33d2aa06a8a9df4"
+    },
+    {
+      "path": "synthetic-demo/profile-D01-mmr.csv",
+      "bytes": 574,
+      "sha256": "46be0430a80df4ea74cd57516580ffffc70466793d89adb88c4a800f38452c10"
+    },
+    {
+      "path": "synthetic-demo/profile-D01-mmr.json",
+      "bytes": 5030,
+      "sha256": "2897a04bcece3ea8ca3bb7f9f6db98e3032b28d872a5b5795a1f4bb923b09fe8"
+    },
+    {
+      "path": "tests-stdout.txt",
+      "bytes": 9351,
+      "sha256": "aa37fed714ccab5576d5d50baadee32ef7fcad823fd97c76112d44728582f8d6"
+    },
+    {
+      "path": "workflow-checks.json",
+      "bytes": 2032,
+      "sha256": "c9534ea1f90ae293d07162f9b4cfe165ea549e6a6751c6786e9b91e20d0e0eee"
+    }
+  ]
+}

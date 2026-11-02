@@ -1,0 +1,105 @@
+{
+  "checked_at": "2026-11-02T13:41:22.655437+00:00",
+  "runner": "Actual local CLI invocations; no browser UI or hosting claimed",
+  "demos": [
+    {
+      "file": "diverse.json",
+      "synthetic": true,
+      "user": "D00",
+      "lambda": 0.5,
+      "ranking": [
+        "S01",
+        "S12",
+        "S07",
+        "S06",
+        "S11"
+      ],
+      "ild": 0.8,
+      "csv_json_parity": true,
+      "fallback": false
+    },
+    {
+      "file": "fallback.json",
+      "synthetic": true,
+      "user": "UNKNOWN",
+      "lambda": 0.5,
+      "ranking": [
+        "S01",
+        "S05",
+        "S09",
+        "S02",
+        "S03"
+      ],
+      "ild": 0.7,
+      "csv_json_parity": true,
+      "fallback": true
+    },
+    {
+      "file": "max-diversity.json",
+      "synthetic": true,
+      "user": "D00",
+      "lambda": 0.0,
+      "ranking": [
+        "S01",
+        "S12",
+        "S07",
+        "S06",
+        "S11"
+      ],
+      "ild": 0.8,
+      "csv_json_parity": true,
+      "fallback": false
+    },
+    {
+      "file": "profile-D01-base.json",
+      "synthetic": true,
+      "user": "D01",
+      "lambda": 1.0,
+      "ranking": [
+        "S04",
+        "S12",
+        "S11",
+        "S10",
+        "S05"
+      ],
+      "ild": 0.7000000000000001,
+      "csv_json_parity": true,
+      "fallback": false
+    },
+    {
+      "file": "profile-D01-mmr.json",
+      "synthetic": true,
+      "user": "D01",
+      "lambda": 0.5,
+      "ranking": [
+        "S04",
+        "S12",
+        "S05",
+        "S11",
+        "S10"
+      ],
+      "ild": 0.7,
+      "csv_json_parity": true,
+      "fallback": false
+    },
+    {
+      "file": "relevance.json",
+      "synthetic": true,
+      "user": "D00",
+      "lambda": 1.0,
+      "ranking": [
+        "S01",
+        "S12",
+        "S07",
+        "S06",
+        "S11"
+      ],
+      "ild": 0.8,
+      "csv_json_parity": true,
+      "fallback": false
+    }
+  ],
+  "invalid_lambda_exit_code": 2,
+  "D00_order_unchanged_at_1_half_0": true,
+  "D01_half_reorders_without_increasing_ILD": true
+}

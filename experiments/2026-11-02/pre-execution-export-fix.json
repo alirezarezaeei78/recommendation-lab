@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-02T13:35:44.341031+00:00",
+  "before_benchmark_execution": true,
+  "reason": "CSV newline parity failed on Windows; writer now declares LF line endings. All70tests passed after fix. No benchmark result inspected.",
+  "new_diversity_sha256": "852dacdd69f4710ebc5b84839337ca1b6d03a8d29a7366be5c465b1b81ba8298"
+}

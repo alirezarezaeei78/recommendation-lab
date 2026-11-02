@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-11-02T13:35:10.663992+00:00",
+  "result_inspected": false,
+  "code_sha256": {
+    "diversity.py": "ec88bce5820bc611878dfbd4a0e98bd88c82024ddd9d224e4f7e45b340363a69",
+    "diversity_cli.py": "4b8ac3bd720a43ef3a5300ecd45c741fc7896892449729b609044097639c9cf4",
+    "test_diversity.py": "6c7d2b519beff30235b81cbdce0439216f1094f92f48d85253d335dab9bafe8c",
+    "benchmark_diversity.py": "e796a5125cf17514f16b333521c4beb6c7b3ec99a79aaa3dcbdda7a57e934ed8",
+    "experiments/2026-11-02/PROTOCOL.md": "b0a2216002549ace4fdb45dcce1ff3cdd00b9dadc14607e373a835d2aecdc065"
+  }
+}

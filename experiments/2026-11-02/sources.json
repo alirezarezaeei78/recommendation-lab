@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf",
+    "title": "Carbonell and Goldstein, The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries",
+    "date": "1998",
+    "status": "Published SIGIR1998 conference paper",
+    "section": "2, Maximal Marginal Relevance",
+    "claim": "Incremental linear combination of relevance and maximum similarity to previously selected items. Lambda1 relevance-only; lambda0 redundancy-oriented.",
+    "limitation": "Original retrieval/summarization setting. Our normalization, genre cosine and explicit first-item rule are declared choices; no transplantation of paper-reported user-study outcomes.",
+    "asset_licence": "Link and original explanation only; no paper artwork/PDF redistributed."
+  },
+  {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+    "title": "GroupLens MovieLens100K provider README",
+    "checked_at": "2026-11-02T13:37:21.683687+00:00",
+    "section": "Summary and usage license;u.data,u.item descriptions",
+    "claim": "Local100K research benchmark and19 binary genres; research terms prohibit redistribution without permission and commercial/revenue use without separate permission.",
+    "attribution": "Harper,F.M. and Konstan,J.A.(2015).The MovieLens Datasets:History and Context.DOI10.1145/2827872. GroupLens Research,University of Minnesota.",
+    "public_output_rule": "Code/hashes/aggregates only; no ratings,metadata catalog,demographics,factors or individual predictions."
+  },
+  {
+    "url": "https://github.com/alirezarezaeei78/recommendation-lab/tree/92a1c41b23453db4dd53a33724b3a36dfafcb6f5",
+    "title": "Original23October fitted BPR implementation and aggregate results",
+    "claim": "Three frozen fits and original chronological task; mandatory input/split/factor-hash verification and baseline reproduction.",
+    "limitation": "Previously exposed evaluation; exploratory extension. No new independent validation."
+  }
+]

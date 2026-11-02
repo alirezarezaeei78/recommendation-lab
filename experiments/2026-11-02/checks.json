@@ -1,0 +1,31 @@
+{
+  "local_tests_passed": 71,
+  "new_mmr_tests": 9,
+  "baseline_reproduction": true,
+  "candidate_and_no_seen_checks": true,
+  "independent_scalar_metric_and_cosine_oracles": true,
+  "completed_sweep_conditions": 15,
+  "benchmark_new_fits": 0,
+  "private_audit_hashes": {
+    "predictions-13.jsonl": "8d3bb5c6b927b426d55a45bc64e824948005fdfeaf57a132b83ba06a098da12c",
+    "predictions-29.jsonl": "8b14a97d91955588d18d9cab85c5f074f6557124eb303c983357e280dea5d0a8",
+    "predictions-47.jsonl": "69e26fe85c2e6ade8e963c91923d792d53fa0bd4e37ba637549909e0f5afe879"
+  },
+  "cli_export_parity_verified": true,
+  "invalid_lambda_exit_code": 2,
+  "no_native_browser_preview": true,
+  "native_browser_error": "Local browser use is disabled in Work settings",
+  "scientific_novelty_claim": false,
+  "runtime_comparison_claim": false,
+  "initial_test_failure": "Windows CSV newline parity; fixed with declared LF before benchmark execution.",
+  "data_provider_metadata_and_user_rows_redistributed": false,
+  "final_code_sha256": {
+    "diversity.py": "852dacdd69f4710ebc5b84839337ca1b6d03a8d29a7366be5c465b1b81ba8298",
+    "diversity_cli.py": "4b8ac3bd720a43ef3a5300ecd45c741fc7896892449729b609044097639c9cf4",
+    "benchmark_diversity.py": "e796a5125cf17514f16b333521c4beb6c7b3ec99a79aaa3dcbdda7a57e934ed8",
+    "test_diversity.py": "50cb19f3248260dc10e3494a0349af6da88fea8f3300719daca630583d66aaa9",
+    "plot_diversity.py": "c65ca69b5fae9d9fba7d23fc07e70410f3d98ff5a42173e55e376ce4a3d29c67"
+  },
+  "extra_edge_check": "One exhausted-candidate/no-positive-profile test added after sweep; numerical benchmark implementation unchanged.",
+  "local_test_count": 71
+}

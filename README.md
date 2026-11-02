@@ -181,3 +181,7 @@ three frozen model seeds were reused; this is not fresh independent validation.
 The complete six-cap experiment, privacy-protected small-bin supports, diagrams,
 runner, actual checks and limitations are linked above. The new policy is optional;
 the default method is unchanged.
+
+## Relevance–diversity extension (2 November 2026)
+
+The new [MMR local workflow](experiments/2026-11-02/README.md) reranks fixed model scores with a declared genre/tag similarity penalty and exports each decision's relevance, redundancy and base rank. It includes a safe synthetic CLI demo and a five-setting frozen-factor research comparison. The existing workflows above remain available.
