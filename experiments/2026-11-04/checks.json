@@ -1,0 +1,29 @@
+{
+  "local_tests_passed": 83,
+  "new_batch_tests": 12,
+  "actual_cli_and_http_workflows_passed": true,
+  "benchmark_complete": true,
+  "conditions": 24,
+  "query_results": 6888,
+  "legacy_top10_order_mismatches": 0,
+  "scalar_candidate_scores_checked": 407031,
+  "max_scalar_error": 3.552713678800501e-15,
+  "max_legacy_error": 1.172212318323318e-06,
+  "new_benchmark_fits": 0,
+  "exact_batch_partition_parity": true,
+  "independent_metrics_and_candidate_checks": true,
+  "json_csv_roundtrips_exact": true,
+  "runtime_comparison_claimed": false,
+  "native_linkedin_preview_verified": false,
+  "native_chrome_disconnected": true,
+  "private_provider_data_redistributed": false,
+  "code_sha256": {
+    "batch_serving.py": "3f8fedf7cc0c8da55bab728aade16f346b309ef146263ef08e8fbc7141a44ac7",
+    "batch_cli.py": "d3c3b170de5c9a25b134d08c0a3cf14162cfcb5fb2bd1ee649ca64323788681b",
+    "benchmark_batch.py": "8d97c3643cc0f6362a651c21232166674d4ceeadd7c872fe76158fe8c7ac92d3",
+    "test_batch_serving.py": "98eb0eb3546866604703b108afc87a07fbff090b780e981126ad1fc86887a6f3",
+    "plot_batch.py": "c2979ac16e6f9a9baef162d4e72278c92192d2876aafde64eea13f6f50b9205f",
+    "app.py": "a7610353956d0c3195d5aa7b71c20563a8c9fef0e80cda86f6dad8b17ce829c8"
+  },
+  "packaging_correction": "Normalized generated SVG trailing whitespace and LF text serialization; scoring/evaluation unchanged."
+}

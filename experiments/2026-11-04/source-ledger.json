@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-04T16:53:51.943658+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1205.2618v1",
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback",
+      "authors": "Rendle, Freudenthaler, Gantner, Schmidt-Thieme",
+      "version": "v1 9 May2012; UAI2009 proceedings",
+      "claim": "Established pairwise ranking method behind the previously fitted compact minibatch-Adam factor model",
+      "limits": "No new scientific method or reproduction of paper metrics; batch serving makes no paper-result claim."
+    },
+    {
+      "url": "https://numpy.org/doc/1.26/reference/generated/numpy.matmul.html",
+      "title": "NumPy1.26 matmul reference",
+      "version": "1.26",
+      "section": "Matrix product signature and Notes",
+      "claim": "Documents matrix multiplication; numerical differences here are independently measured, not a documented bitwise guarantee",
+      "license": "NumPy documentation retains NumPy project copyright; no copied artwork or code."
+    },
+    {
+      "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+      "title": "MovieLens100K provider README",
+      "section": "Summary & usage licence; citation",
+      "attribution": "GroupLens Research, University of Minnesota; Harper and Konstan2015, DOI10.1145/2827872",
+      "data_license": "Research use with attribution; no redistribution or commercial rights implied; seek separate provider permission as required",
+      "public_policy": "No provider rows, metadata catalog, per-user research rankings or research factors published."
+    }
+  ],
+  "original_assets": {
+    "code": "Owner-authored portfolio contribution, MIT",
+    "figures": "Original Matplotlib workflow and tables from saved computed aggregates, MIT",
+    "synthetic_demo": "Independently authored interaction generator; no benchmark records"
+  }
+}

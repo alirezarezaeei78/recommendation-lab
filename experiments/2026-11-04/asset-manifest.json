@@ -1,0 +1,35 @@
+{
+  "figures": {
+    "batch-metrics.png": {
+      "bytes": 185449,
+      "sha256": "c708f0b814fed725746ae0a6674c29f4fc3258863332f680e6d42c9c9fefad9c"
+    },
+    "batch-metrics.svg": {
+      "bytes": 6027,
+      "sha256": "139f82a44a3f6158800798c38ae1aeeef119b22fbb9dc485c06183b5c97ec00b"
+    },
+    "batch-parity.png": {
+      "bytes": 169888,
+      "sha256": "055d84e135f594fcfe4060a62bc76ccbf28b5eebfd55251444c83f1b4a39a654"
+    },
+    "batch-parity.svg": {
+      "bytes": 6385,
+      "sha256": "54cd6098ec4813675cb586c253602664daa0d3df66f3556476e08152c8b73d7b"
+    },
+    "batch-workflow.png": {
+      "bytes": 181527,
+      "sha256": "c94715a882e8aa6d01029393d467037aa77111d48d7d756a1cb457984f4384a7"
+    },
+    "batch-workflow.svg": {
+      "bytes": 6720,
+      "sha256": "bfb30773b2050bb94e843eee1f32cdecda39413f8b64cc7b4d3e72eff65b8cb9"
+    }
+  },
+  "source": "plot_batch.py",
+  "data": "results.json",
+  "dimensions": [
+    1800,
+    1500
+  ],
+  "original": true
+}

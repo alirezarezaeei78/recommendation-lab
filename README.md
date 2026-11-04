@@ -1,5 +1,11 @@
 # Recommendation Explorer
 
+New4November: [checked batch serving and exact JSON/CSV exports](experiments/2026-11-04/README.md).
+A local batch CLI and loopback API preserve candidate rules, report cold-user
+fallback and retain empty-query status. A new frozen-model audit covers24
+conditions and6,888 query results; ranking order/metrics stayed unchanged. This
+is a serving-correctness result with no speed or predictive-quality improvement claim.
+
 New: [metadata-only catalog workflow and measured cold-item comparison](experiments/2026-10-30/README.md).
 Add an authored item with no interactions, inspect content/hybrid components and
 export JSON/CSV through the local catalog CLI/API. The hybrid failed to retrieve

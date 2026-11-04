@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="720pt" viewBox="0 0 864 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-04T20:26:15.161199</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720
+L 864 720
+L 864 0
+L 0 0
+z
+" style="fill: #f7f9fb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.48 224.64
+L 803.52 224.64
+Q 813.888 224.64 813.888 216
+L 813.888 140.4
+Q 813.888 131.76 803.52 131.76
+L 60.48 131.76
+Q 50.112 131.76 50.112 140.4
+L 50.112 216
+Q 50.112 224.64 60.48 224.64
+z
+" clip-path="url(#p621d6024f0)" style="fill: #ffffff; stroke: #087f82; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 60.48 339.84
+L 803.52 339.84
+Q 813.888 339.84 813.888 331.2
+L 813.888 255.6
+Q 813.888 246.96 803.52 246.96
+L 60.48 246.96
+Q 50.112 246.96 50.112 255.6
+L 50.112 331.2
+Q 50.112 339.84 60.48 339.84
+z
+" clip-path="url(#p621d6024f0)" style="fill: #ffffff; stroke: #087f82; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 60.48 455.04
+L 803.52 455.04
+Q 813.888 455.04 813.888 446.4
+L 813.888 370.8
+Q 813.888 362.16 803.52 362.16
+L 60.48 362.16
+Q 50.112 362.16 50.112 370.8
+L 50.112 446.4
+Q 50.112 455.04 60.48 455.04
+z
+" clip-path="url(#p621d6024f0)" style="fill: #ffffff; stroke: #087f82; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 60.48 570.24
+L 803.52 570.24
+Q 813.888 570.24 813.888 561.6
+L 813.888 486
+Q 813.888 477.36 803.52 477.36
+L 60.48 477.36
+Q 50.112 477.36 50.112 486
+L 50.112 561.6
+Q 50.112 570.24 60.48 570.24
+z
+" clip-path="url(#p621d6024f0)" style="fill: #ffffff; stroke: #087f82; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 432 228.797227
+Q 432 236.160391 432 241.287488
+" clip-path="url(#p621d6024f0)" style="fill: none; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 436 233.287488
+L 432 241.287488
+L 428 233.287488
+z
+" clip-path="url(#p621d6024f0)" style="fill: #087f82; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 432 343.997227
+Q 432 351.360391 432 356.487488
+" clip-path="url(#p621d6024f0)" style="fill: none; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 436 348.487488
+L 432 356.487488
+L 428 348.487488
+z
+" clip-path="url(#p621d6024f0)" style="fill: #087f82; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 432 459.197227
+Q 432 466.560391 432 471.687488
+" clip-path="url(#p621d6024f0)" style="fill: none; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 436 463.687488
+L 432 471.687488
+L 428 463.687488
+z
+" clip-path="url(#p621d6024f0)" style="fill: #087f82; stroke: #087f82; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a44" x="51.84" y="63.715781" transform="rotate(-0 51.84 63.715781)">One batch, traceable ranking evidence</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536479" x="51.84" y="101.463281" transform="rotate(-0 51.84 101.463281)">Implemented local CLI + loopback API  |  workflow schematic, not a timing trace</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="82.08" y="163.44" transform="rotate(-0 82.08 163.44)">1  Validate the complete query batch</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a44" x="82.08" y="195.12" transform="rotate(-0 82.08 195.12)">Unique query IDs, known exclusions, bounded batch size</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="82.08" y="278.64" transform="rotate(-0 82.08 278.64)">2  Load the fixed scoring snapshot</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a44" x="82.08" y="310.32" transform="rotate(-0 82.08 310.32)">Known fitted user: BPR factors  |  cold user: popularity</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="82.08" y="393.84" transform="rotate(-0 82.08 393.84)">3  Score, filter, then rank</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a44" x="82.08" y="425.52" transform="rotate(-0 82.08 425.52)">Fixed factor order; remove all seen items; deterministic ties</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="82.08" y="509.04" transform="rotate(-0 82.08 509.04)">4  Export the same result object</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a44" x="82.08" y="540.72" transform="rotate(-0 82.08 540.72)">Full-precision JSON + CSV, fallback reason + candidate hash</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ac670a" x="64.8" y="633.6" transform="rotate(-0 64.8 633.6)">Empty candidates remain visible as a query-status record.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536479" x="64.8" y="667.44" transform="rotate(-0 64.8 667.44)">Default demo: authored synthetic data. Research records and factors stay private.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p621d6024f0">
+   <rect x="0" y="0" width="864" height="720"/>
+  </clipPath>
+ </defs>
+</svg>

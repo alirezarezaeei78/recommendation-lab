@@ -1,0 +1,25 @@
+{"seed": 13, "method": "bpr", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "bpr", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "bpr", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "bpr", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "popularity", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "popularity", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "popularity", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 13, "method": "popularity", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "bpr", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "bpr", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "bpr", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "bpr", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "popularity", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "popularity", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "popularity", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 29, "method": "popularity", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "bpr", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "bpr", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "bpr", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "bpr", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "popularity", "batch_size": 1, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "popularity", "batch_size": 7, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "popularity", "batch_size": 32, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"seed": 47, "method": "popularity", "batch_size": 128, "rank_mismatches": 0, "warm_metric_delta": {"ndcg_at_10": 0.0, "recall_at_10": 0.0, "catalog_coverage": 0.0}}
+{"status": "completed", "total_conditions": 24, "total_query_results": 6888, "total_legacy_top10_order_mismatches": 0, "max_scalar_score_error": 3.552713678800501e-15, "max_legacy_score_error": 1.172212318323318e-06, "scalar_candidate_scores_checked": 407031}

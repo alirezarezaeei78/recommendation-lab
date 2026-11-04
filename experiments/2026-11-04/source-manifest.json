@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-11-04T16:56:15.549416+00:00",
+  "files": {
+    "batch_serving.py": {
+      "bytes": 7802,
+      "sha256": "3f8fedf7cc0c8da55bab728aade16f346b309ef146263ef08e8fbc7141a44ac7"
+    },
+    "batch_cli.py": {
+      "bytes": 2369,
+      "sha256": "d3c3b170de5c9a25b134d08c0a3cf14162cfcb5fb2bd1ee649ca64323788681b"
+    },
+    "benchmark_batch.py": {
+      "bytes": 12062,
+      "sha256": "8d97c3643cc0f6362a651c21232166674d4ceeadd7c872fe76158fe8c7ac92d3"
+    },
+    "test_batch_serving.py": {
+      "bytes": 10281,
+      "sha256": "98eb0eb3546866604703b108afc87a07fbff090b780e981126ad1fc86887a6f3"
+    },
+    "plot_batch.py": {
+      "bytes": 6491,
+      "sha256": "c2979ac16e6f9a9baef162d4e72278c92192d2876aafde64eea13f6f50b9205f"
+    },
+    "app.py": {
+      "bytes": 5396,
+      "sha256": "a7610353956d0c3195d5aa7b71c20563a8c9fef0e80cda86f6dad8b17ce829c8"
+    },
+    "README.md": {
+      "bytes": 11360,
+      "sha256": "20eb2b3ff5db0ad84ed76e4cf9ba37cef98c861e66464e9a740942bf05abfe92"
+    },
+    ".github/workflows/checks.yml": {
+      "bytes": 601,
+      "sha256": "4b81a88d267d6748f8a90d9d07a11c2bdd24b40eb0c41a154d818bf925126cd1"
+    },
+    "experiments/2026-11-04/asset-manifest.json": {
+      "bytes": 973,
+      "sha256": "8011a7b7553b91f805d33b73cfda6f139526a22ae2c3105302ed3882ad18141e"
+    },
+    "experiments/2026-11-04/batch-metrics.png": {
+      "bytes": 185449,
+      "sha256": "c708f0b814fed725746ae0a6674c29f4fc3258863332f680e6d42c9c9fefad9c"
+    },
+    "experiments/2026-11-04/batch-metrics.svg": {
+      "bytes": 6027,
+      "sha256": "139f82a44a3f6158800798c38ae1aeeef119b22fbb9dc485c06183b5c97ec00b"
+    },
+    "experiments/2026-11-04/batch-parity.png": {
+      "bytes": 169888,
+      "sha256": "055d84e135f594fcfe4060a62bc76ccbf28b5eebfd55251444c83f1b4a39a654"
+    },
+    "experiments/2026-11-04/batch-parity.svg": {
+      "bytes": 6385,
+      "sha256": "54cd6098ec4813675cb586c253602664daa0d3df66f3556476e08152c8b73d7b"
+    },
+    "experiments/2026-11-04/batch-workflow.png": {
+      "bytes": 181527,
+      "sha256": "c94715a882e8aa6d01029393d467037aa77111d48d7d756a1cb457984f4384a7"
+    },
+    "experiments/2026-11-04/batch-workflow.svg": {
+      "bytes": 6720,
+      "sha256": "bfb30773b2050bb94e843eee1f32cdecda39413f8b64cc7b4d3e72eff65b8cb9"
+    },
+    "experiments/2026-11-04/benchmark-stdout.txt": {
+      "bytes": 4130,
+      "sha256": "9982016f1fefa2b30d7fed1f7267a6e612e0de7fc1147c8f28147dfb75ab7103"
+    },
+    "experiments/2026-11-04/checks.json": {
+      "bytes": 1374,
+      "sha256": "9828c65f42f92511796f02df9556653992b5ed34442ffdae8fb203638c613073"
+    },
+    "experiments/2026-11-04/protocol-frozen.json": {
+      "bytes": 298,
+      "sha256": "eec5b0c4f35a81fd277c43986fa4c233c77ceedb71ac087cd5045bc3e0c10285"
+    },
+    "experiments/2026-11-04/PROTOCOL.md": {
+      "bytes": 5574,
+      "sha256": "6093eede6f2a19ab4fc75a90ae8ae7a0dad7fd093407de1b7cbd1595515632f2"
+    },
+    "experiments/2026-11-04/README.md": {
+      "bytes": 6391,
+      "sha256": "99f2247347df14a77f7e0ba5fa03fcb44a95eca5516f12c5d868332600b38bb4"
+    },
+    "experiments/2026-11-04/results.json": {
+      "bytes": 36684,
+      "sha256": "0df7037e98021699c1015fd38b4b8556ecdfb1c51bcb8ca09eec24c457766a77"
+    },
+    "experiments/2026-11-04/source-ledger.json": {
+      "bytes": 1877,
+      "sha256": "6413167b5e4b1bf2594377df094d429769011098c16655bbc70a5c3ec6845e58"
+    },
+    "experiments/2026-11-04/synthetic-demo/batch.csv": {
+      "bytes": 5934,
+      "sha256": "bd558af5a29958443b5df7b5d36dafb6359d8b5efa1533e6e16464299a883588"
+    },
+    "experiments/2026-11-04/synthetic-demo/batch.json": {
+      "bytes": 7706,
+      "sha256": "b4d129f43e54ed72b871174738833e7c2380b08ca02a9f8413ec4c98bab88dde"
+    },
+    "experiments/2026-11-04/tests-stdout.txt": {
+      "bytes": 11260,
+      "sha256": "ba89b2cf69719035f5b6c93cf4027176ffd1db8a3c9ffb799f44ba12e58ccc64"
+    }
+  },
+  "excluded": "Private provider data, factors and per-user research audits are outside this checkout."
+}

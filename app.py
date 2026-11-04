@@ -6,10 +6,12 @@ from pathlib import Path
 from urllib.parse import urlparse
 from recommender import Recommender, synthetic_rows, read_rows, csv_export
 from history_policy import HistoryRecommender
+from batch_serving import BatchServing, batch_csv
 
 ROOT = Path(__file__).resolve().parent
 
 def handler_for(model, synthetic):
+    batch_engine = BatchServing(model) if hasattr(model, 'user_factors') else None
     class Handler(BaseHTTPRequestHandler):
         def local_host(self):
             return self.headers.get('Host') in (f'127.0.0.1:{self.server.server_port}', f'localhost:{self.server.server_port}')
@@ -41,7 +43,7 @@ def handler_for(model, synthetic):
             try:
                 if not self.local_host():
                     return self.reply(json.dumps({'error':'Loopback host required'}), status=403)
-                if self.path != '/api/recommend':
+                if self.path not in ('/api/recommend', '/api/batch'):
                     return self.reply(json.dumps({'error':'Not found'}), status=404)
                 host = self.headers.get('Host', '')
                 if self.headers.get('Origin') not in (None, 'http://'+host):
@@ -50,6 +52,14 @@ def handler_for(model, synthetic):
                 if not 0 < size <= 65536:
                     return self.reply(json.dumps({'error':'Request must be1..65536 bytes'}), status=413)
                 args = json.loads(self.rfile.read(size))
+                if self.path == '/api/batch':
+                    if batch_engine is None:
+                        raise ValueError('Batch serving requires a fitted factor model')
+                    if not isinstance(args, dict) or set(args)-{'queries','method','n','batch_size'}:
+                        raise ValueError('Unknown batch request fields')
+                    result = batch_engine.recommend(**args)
+                    result['csv'] = batch_csv(result)
+                    return self.reply(json.dumps(result, allow_nan=False))
                 if not isinstance(args, dict) or set(args)-{'liked','seen','method','n','user_id'}:
                     raise ValueError('Unknown request fields')
                 if args.get('user_id') is not None and not isinstance(args['user_id'], str):
