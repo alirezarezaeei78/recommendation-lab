@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-09T18:27:13.870491+03:30",
+  "sources": [
+    {
+      "title": "MovieLens100K provider README",
+      "url": "https://files.grouplens.org/datasets/movielens/ml-100k/README",
+      "version": "Provider stable benchmark, currentterms checked9November2026",
+      "licence": "Research permitted with acknowledgment; no redistribution without permission; commercial use requires separate permission",
+      "attribution": "GroupLens Research, University of Minnesota; Harper andKonstan2015, DOI10.1145/2827872"
+    },
+    {
+      "title": "Krichene andRendle, On Sampled Metrics for Item Recommendation",
+      "url": "https://research.google/pubs/on-sampled-metrics-for-item-recommendation/",
+      "version": "KDD2020, peer-reviewed conference; DOI10.1145/3394486.3403226",
+      "supports": "Established motivation: sampled ranking metrics need not preserve exact full-catalog comparisons; not claimed as a new paper or our exact result"
+    },
+    {
+      "title": "Published extended abstract",
+      "url": "https://ijcai.org/proceedings/2021/651",
+      "version": "IJCAI2021 Sister Conferences Best Papers, pages4784–4788, DOI10.24963/ijcai.2021/651",
+      "method_read": "Single relevant item rank/metric analysis and corrections; our local multi-positive comparison does not implement their corrections or claim an exact reproduction"
+    }
+  ],
+  "new_code_and_figure": "Repository MIT, copyright2026AlirezaRezaei; existinghuman andthird-party credit preserved",
+  "data_and_factors_public": false
+}

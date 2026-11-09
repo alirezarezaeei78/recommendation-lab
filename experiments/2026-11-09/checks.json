@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-09T18:27:13.870491+03:30",
+  "new_tests": 9,
+  "repository_tests": 92,
+  "conditions": 96,
+  "query_results": 27552,
+  "actual_conditions_completed": true,
+  "no_new_fits": true,
+  "all_factors_match_original_hashes": true,
+  "full_metric_parity_with_prior": true,
+  "all_observed_positives_retained": true,
+  "identical_candidates_across_methods_and_models": true,
+  "nested_reproducible_pools": true,
+  "independent_scalar_metric_checks": 27552,
+  "all_JSON_CSV_columns_roundtrip_exact": true,
+  "unchanged_factors": true,
+  "existing_evidence_guard": {
+    "exit_code": 1,
+    "existing_results_hash_unchanged": true,
+    "reason": "Existing private audit/output paths rejected"
+  },
+  "no_private_records_or_models_public": true,
+  "figure_dimensions": [
+    1080,
+    1400
+  ],
+  "local_visual_inspection": "All4candidatepolicies,8methodrows andallmetrics/footnotes visible; no clipped labels; static image only",
+  "native_preview_verified": false,
+  "scope": "Executed local research comparison; no new app, model improvement, confidence interval or deployment claim."
+}

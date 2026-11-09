@@ -1,5 +1,9 @@
 # Recommendation Explorer
 
+New 9 November: [frozen-model candidate-sampling comparison](experiments/2026-11-09/README.md).
+Full-catalog and sampled offline metrics use the same queries, fixed relevance
+denominators and frozen models. Higher sampled scores do not show model improvement.
+
 New4November: [checked batch serving and exact JSON/CSV exports](experiments/2026-11-04/README.md).
 A local batch CLI and loopback API preserve candidate rules, report cold-user
 fallback and retain empty-query status. A new frozen-model audit covers24

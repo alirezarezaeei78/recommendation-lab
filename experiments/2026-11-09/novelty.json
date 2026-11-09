@@ -1,0 +1,14 @@
+{
+  "id": "2026-11-09-candidate-policy-comparison",
+  "date": "2026-11-09",
+  "editorial_pillar": "research_analysis",
+  "question": "How do matched candidate-sampling policies change frozen-model recommendation metrics?",
+  "data": "Known chronological MovieLens100K task;95warm/192coldqueries",
+  "method": "Three frozen BPR seeds andtrain-only popularity; fullcatalog versusallobservedpositives+20/100/500uniformotheritems;5samplingseeds",
+  "intervention": "New nested candidatepool evaluator with samequery supports/relevance denominators; sharedpools andallnegativeoutcomes retained",
+  "outcome": "BPR warm NDCG0.1710full versus0.7778+20; parameters unchanged; +500Recallmeanpopularity0.1970 exceedsBPR0.1947",
+  "benchmark_exposure": "Repeated19/23/26October and4November task, exploratory, not independent validation",
+  "comparison_to_previous": "November4batch serving checked score/export parity without sampling; this is an executed candidate-policy investigation, no app substitution",
+  "scientific_novelty_claimed": false,
+  "status": "local_complete_pending_public_verification"
+}

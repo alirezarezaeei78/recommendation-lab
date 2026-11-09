@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-09",
+  "source_parent": "39a57b5d20a805d4a398b8696f266bb76ad4336e",
+  "files": {
+    "README.md": {
+      "bytes": 11818,
+      "sha256": "b1fe75c3ad06cafa019f3d40b9a51fef095cb26f06b1215a81b2c67d8e2e734c"
+    },
+    "benchmark_candidates.py": {
+      "bytes": 16307,
+      "sha256": "4d305880553d4a1207b1800034a0d6605ba373a7e0e9881357404ce46a5cd9d4"
+    },
+    "plot_candidates.py": {
+      "bytes": 2888,
+      "sha256": "2a6c6a0084f9b8be17c20d9eaa4d094cd3df14cfa3bc186b29597e61b80044eb"
+    },
+    "test_candidates.py": {
+      "bytes": 3103,
+      "sha256": "686e481b8e56ddc00cc88251db335f7c6479c77941fed55783fc3ab8d0564a9c"
+    },
+    "experiments/2026-11-09/README.md": {
+      "bytes": 7360,
+      "sha256": "fe9515d745d65bc5fae4f1a811f46dcafd66440971da842299955f67c4aafff5"
+    },
+    "experiments/2026-11-09/PROTOCOL.md": {
+      "bytes": 4168,
+      "sha256": "94501638b90a558262747cbb15194ecc4b8c2a7d63f39d53ef97c53b92bdc155"
+    },
+    "experiments/2026-11-09/protocol-frozen.json": {
+      "bytes": 231,
+      "sha256": "549f2af4f9d41810ea24c027428a5ccff5d4b9bce2b7ac2913de356345dacdf5"
+    },
+    "experiments/2026-11-09/results.json": {
+      "bytes": 132294,
+      "sha256": "53dd63e2d2bd4b1d07d5e56d266338a7b561191cc09c235b23f9583306a58bef"
+    },
+    "experiments/2026-11-09/checks.json": {
+      "bytes": 1135,
+      "sha256": "22a422f371d02884d38c3bdf73045db8e52abdc36eafb005fbe5b0695a37c019"
+    },
+    "experiments/2026-11-09/source-licence-ledger.json": {
+      "bytes": 1563,
+      "sha256": "4b7710815607d574d510c3f975df136dcf105f1c757a8ff330ceee1c83f6c0f1"
+    },
+    "experiments/2026-11-09/novelty.json": {
+      "bytes": 1112,
+      "sha256": "55f3fdb27938ad5e03b8f7c83a10d232b6f423e925c9127383a3139a87d02f57"
+    },
+    "experiments/2026-11-09/candidate-policy.png": {
+      "bytes": 192184,
+      "sha256": "d2ef48876ec5eade70df260f63d9f662a3579f1690c1df9960378af96c541301"
+    },
+    "experiments/2026-11-09/candidate-policy.svg": {
+      "bytes": 11754,
+      "sha256": "b79676e5c2e9d1feaca675450ce829adfa6a2bc51c244dcb3f150512fb521a70"
+    },
+    "experiments/2026-11-09/alt-text.txt": {
+      "bytes": 784,
+      "sha256": "478cede8767a43a3c49d3830907395faedc36c7f75b540b64986062faa6db54e"
+    },
+    "experiments/2026-11-09/benchmark-stdout.txt": {
+      "bytes": 3260,
+      "sha256": "3f708721156b4cd69fb9a57d586858a5eb492aba4a05e2775f171f4051d66c2a"
+    },
+    "experiments/2026-11-09/tests-stdout.txt": {
+      "bytes": 12390,
+      "sha256": "ad5a6f0f9ee9ad732260387ba22a8325ff1512371e294c4f2a7b8636baa082f9"
+    }
+  },
+  "excluded": "Allproviderrecords/factors andprivate candidate/queryaudits are outside checkout; code/hashes/aggregates and originalmedia only."
+}

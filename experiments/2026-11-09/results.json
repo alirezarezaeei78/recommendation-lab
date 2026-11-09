@@ -1,0 +1,3901 @@
+{
+  "date": "2026-11-09",
+  "status": "completed",
+  "new_fits": 0,
+  "protocol_sha256": "94501638b90a558262747cbb15194ecc4b8c2a7d63f39d53ef97c53b92bdc155",
+  "frozen_at": "2026-11-09T18:21:22.516170+03:30",
+  "input_sha256": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+  "train_rows_sha256": "b27d4c632100a4417a3a40da32d3740afa502d547ccc3f9cbff5d93cf2335042",
+  "test_rows_sha256": "7699dc23aae2252282bd3b6ea95ff603239bff568ee94556b2201308030461bc",
+  "cutoff": 889237269,
+  "train_rows": 80003,
+  "future_rows": 19997,
+  "catalog_size": 1616,
+  "model_seeds": [
+    13,
+    29,
+    47
+  ],
+  "sampling_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "nonrelevant_budgets": [
+    20,
+    100,
+    500
+  ],
+  "conditions": [
+    {
+      "model_seed": 13,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.16806657102737813,
+        "recall_at_10": 0.11279424382997723,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.2767543772096786,
+        "recall_at_10": 0.08756950890812448,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": 2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.15866403366646886,
+        "recall_at_10": 0.1060635281852962,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.273642039058855,
+        "recall_at_10": 0.0853415716738224,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": -2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7858321810470079,
+        "recall_at_10": 0.7169874799837496,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8576261490803386,
+        "recall_at_10": 0.45621348222332103,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.762783183874195,
+        "recall_at_10": 0.6961496669479096,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8499966900858534,
+        "recall_at_10": 0.449315948291597,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5203613087833234,
+        "recall_at_10": 0.4356027348007276,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6582607151580548,
+        "recall_at_10": 0.2977577591116644,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.48439588294814506,
+        "recall_at_10": 0.4070060534628385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6463557832613931,
+        "recall_at_10": 0.28829195866880913,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2803209976829114,
+        "recall_at_10": 0.2079593365569772,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4155852333038092,
+        "recall_at_10": 0.15433195715007011,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26037355606267587,
+        "recall_at_10": 0.19483714381726028,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4089824216176685,
+        "recall_at_10": 0.14998837418744607,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7914232179534314,
+        "recall_at_10": 0.7179351252750062,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8529100495479387,
+        "recall_at_10": 0.45410311001073034,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7295888184292101,
+        "recall_at_10": 0.648564389565205,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8324422169528131,
+        "recall_at_10": 0.43114067136114453,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5307445120166733,
+        "recall_at_10": 0.4354761902190485,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6499738060894339,
+        "recall_at_10": 0.2931613466655145,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4831788146264858,
+        "recall_at_10": 0.4062040662116788,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.63422906305087,
+        "recall_at_10": 0.2834719676386848,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2790450512840937,
+        "recall_at_10": 0.19792569215191808,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41612192256511804,
+        "recall_at_10": 0.15016558051734152,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2688298793534599,
+        "recall_at_10": 0.20547866436982215,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4127405938772777,
+        "recall_at_10": 0.15266569327239687,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7802069510692536,
+        "recall_at_10": 0.7118720016811226,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8612555718273679,
+        "recall_at_10": 0.45797512078993236,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7504300614168634,
+        "recall_at_10": 0.6788033335427526,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8513991100957407,
+        "recall_at_10": 0.44702904597061127,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.508689989898116,
+        "recall_at_10": 0.45423496287710186,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6563320899850956,
+        "recall_at_10": 0.30402619548883003,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.47675128531106203,
+        "recall_at_10": 0.40662150171331385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6457600449127259,
+        "recall_at_10": 0.2882656421419315,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2673202416797289,
+        "recall_at_10": 0.19922105268505247,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4063575789886021,
+        "recall_at_10": 0.14948068257582267,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26159904870610284,
+        "recall_at_10": 0.20209494493276572,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.404463804310921,
+        "recall_at_10": 0.1504319709505013,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.783791417824695,
+        "recall_at_10": 0.7072279171637676,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8581784990175303,
+        "recall_at_10": 0.45174450892790624,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7511852609161388,
+        "recall_at_10": 0.668503781560243,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8473855202498897,
+        "recall_at_10": 0.4389264152612343,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4980317850812394,
+        "recall_at_10": 0.42016404551460423,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.651285428562032,
+        "recall_at_10": 0.29137185943934685,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4908525140092185,
+        "recall_at_10": 0.3967465145336036,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6489090147925477,
+        "recall_at_10": 0.28362041190208187,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26672851359303756,
+        "recall_at_10": 0.19654478288089364,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4138687733888528,
+        "recall_at_10": 0.14923712401659497,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2612429225988302,
+        "recall_at_10": 0.19438136725821265,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41205298542909774,
+        "recall_at_10": 0.148521010831387,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7738264104426631,
+        "recall_at_10": 0.716864050824683,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8481345110852853,
+        "recall_at_10": 0.4511997792506616,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7285475135064808,
+        "recall_at_10": 0.6592039964017012,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8331467229008348,
+        "recall_at_10": 0.4321136985183157,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5141194209518931,
+        "recall_at_10": 0.43355534084619296,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6463650154284863,
+        "recall_at_10": 0.29219690481904886,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4784944913614464,
+        "recall_at_10": 0.40041065903762674,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6345727913480249,
+        "recall_at_10": 0.28122566868032484,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2692500988297591,
+        "recall_at_10": 0.19592820486840395,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41621691052788173,
+        "recall_at_10": 0.15037555251761042,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 13,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.24807076810525344,
+        "recall_at_10": 0.18805959453651605,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.40920633067133805,
+        "recall_at_10": 0.1477709602474733,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.17157289842322707,
+        "recall_at_10": 0.11023312506121036,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.27791500822921045,
+        "recall_at_10": 0.08672175182438632,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": 2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.15866403366646886,
+        "recall_at_10": 0.1060635281852962,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.273642039058855,
+        "recall_at_10": 0.0853415716738224,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": -2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7635715047560386,
+        "recall_at_10": 0.7199737690920561,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8502576325380318,
+        "recall_at_10": 0.45720197513373617,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.762783183874195,
+        "recall_at_10": 0.6961496669479096,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8499966900858534,
+        "recall_at_10": 0.449315948291597,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5025637369866196,
+        "recall_at_10": 0.3902419736849103,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6523695328560101,
+        "recall_at_10": 0.2827428730280316,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.48439588294814506,
+        "recall_at_10": 0.4070060534628385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6463557832613931,
+        "recall_at_10": 0.28829195866880913,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2784290372122631,
+        "recall_at_10": 0.18763114422623753,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4149589746114343,
+        "recall_at_10": 0.14760311299877998,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26037355606267587,
+        "recall_at_10": 0.19483714381726028,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4089824216176685,
+        "recall_at_10": 0.14998837418744607,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7640961036378012,
+        "recall_at_10": 0.692981054776381,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8438644890601865,
+        "recall_at_10": 0.4458430518317429,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7295888184292101,
+        "recall_at_10": 0.648564389565205,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8324422169528131,
+        "recall_at_10": 0.43114067136114453,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5128452357251119,
+        "recall_at_10": 0.4304580211004114,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.644048958536478,
+        "recall_at_10": 0.2915002802325162,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4831788146264858,
+        "recall_at_10": 0.4062040662116788,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.63422906305087,
+        "recall_at_10": 0.2834719676386848,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2777597007011378,
+        "recall_at_10": 0.19965920568817927,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4156964580864393,
+        "recall_at_10": 0.15073939161819452,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2688298793534599,
+        "recall_at_10": 0.20547866436982215,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4127405938772777,
+        "recall_at_10": 0.15266569327239687,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7767744041962755,
+        "recall_at_10": 0.7018243545182566,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8601193629321313,
+        "recall_at_10": 0.45464924455135297,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7504300614168634,
+        "recall_at_10": 0.6788033335427526,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8513991100957407,
+        "recall_at_10": 0.44702904597061127,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5046413275336719,
+        "recall_at_10": 0.41202049097664123,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6549919404219522,
+        "recall_at_10": 0.2900527640235207,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.47675128531106203,
+        "recall_at_10": 0.40662150171331385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6457600449127259,
+        "recall_at_10": 0.2882656421419315,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26699915423585296,
+        "recall_at_10": 0.1799029923194793,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.40625129568836443,
+        "recall_at_10": 0.1430862026638734,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26159904870610284,
+        "recall_at_10": 0.20209494493276572,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.404463804310921,
+        "recall_at_10": 0.1504319709505013,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7712467469789699,
+        "recall_at_10": 0.7039069459769524,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8540260818386316,
+        "recall_at_10": 0.45064523275108587,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7511852609161388,
+        "recall_at_10": 0.668503781560243,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8473855202498897,
+        "recall_at_10": 0.4389264152612343,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.49690867883268125,
+        "recall_at_10": 0.4091351420421467,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6509136686539727,
+        "recall_at_10": 0.28772117710525813,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4908525140092185,
+        "recall_at_10": 0.3967465145336036,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6489090147925477,
+        "recall_at_10": 0.28362041190208187,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2576768554363875,
+        "recall_at_10": 0.17461787321209662,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41087257992236587,
+        "recall_at_10": 0.14197908771507683,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2612429225988302,
+        "recall_at_10": 0.19438136725821265,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41205298542909774,
+        "recall_at_10": 0.148521010831387,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7596056268473517,
+        "recall_at_10": 0.6910909266765021,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8434272830659314,
+        "recall_at_10": 0.4426686057521348,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7285475135064808,
+        "recall_at_10": 0.6592039964017012,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8331467229008348,
+        "recall_at_10": 0.4321136985183157,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.49940116796206035,
+        "recall_at_10": 0.4182183192520475,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6414931198395173,
+        "recall_at_10": 0.2871201903540878,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4784944913614464,
+        "recall_at_10": 0.40041065903762674,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6345727913480249,
+        "recall_at_10": 0.28122566868032484,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2637806146046262,
+        "recall_at_10": 0.18573360940313913,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4144064540770538,
+        "recall_at_10": 0.14700103485489208,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 29,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.24807076810525344,
+        "recall_at_10": 0.18805959453651605,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.40920633067133805,
+        "recall_at_10": 0.1477709602474733,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.17322205265229756,
+        "recall_at_10": 0.12070566545338744,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.2784608955175788,
+        "recall_at_10": 0.09018827216326025,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": 2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": null,
+      "nonrelevant_budget": null,
+      "candidate_policy": "full",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "547d09d8d7d273a7dec8cd8d63ba8cf62cf10b0c7fccc933f76455e689071543",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.15866403366646886,
+        "recall_at_10": 0.1060635281852962,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1461.0,
+        "candidate_count_max": 1615,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.3305321979769627,
+        "recall_at_10": 0.0750885202749161,
+        "candidate_count_min": 1616,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.273642039058855,
+        "recall_at_10": 0.0853415716738224,
+        "candidate_count_min": 1008,
+        "candidate_count_median": 1616.0,
+        "candidate_count_max": 1616,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      },
+      "full_metric_deltas": {
+        "ndcg_at_10": -2.7755575615628914e-17,
+        "recall_at_10": 0.0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7846231706483175,
+        "recall_at_10": 0.7306506860448714,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8572259540006327,
+        "recall_at_10": 0.4607361462505217,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "206b5c20a98d4fabc9c32fb39222df011f27a25831941fb377cdf86557ca1db6",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.762783183874195,
+        "recall_at_10": 0.6961496669479096,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8931492061801637,
+        "recall_at_10": 0.327184681248109,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8499966900858534,
+        "recall_at_10": 0.449315948291597,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5225716653487749,
+        "recall_at_10": 0.42314857364067543,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6589923662859918,
+        "recall_at_10": 0.29363530158481793,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "796db582c4c9213c8b0d470e7213253a9f250068ca2798785694d02ee8f24bb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.48439588294814506,
+        "recall_at_10": 0.4070060534628385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7264921922705522,
+        "recall_at_10": 0.22955321384884675,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6463557832613931,
+        "recall_at_10": 0.28829195866880913,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.28243595600797555,
+        "recall_at_10": 0.1915527968347096,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4162853066169837,
+        "recall_at_10": 0.14890122100506864,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 101,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "bdc081ceb41c872c4f4d2386ad3a00c4c596a010254e1f7ef952f8c5e5f4ef19",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26037355606267587,
+        "recall_at_10": 0.19483714381726028,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4825128498870659,
+        "recall_at_10": 0.12779757671436087,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4089824216176685,
+        "recall_at_10": 0.14998837418744607,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.784680124447148,
+        "recall_at_10": 0.7254545450971268,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8506780151120609,
+        "recall_at_10": 0.4565921165720594,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "88ae75a0edbb7d2d3463b85e3f35ff64fea57b721620f5d984fe0458419dc3dd",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7295888184292101,
+        "recall_at_10": 0.648564389565205,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8833332214306376,
+        "recall_at_10": 0.3235612274580938,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8324422169528131,
+        "recall_at_10": 0.43114067136114453,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.515554978703572,
+        "recall_at_10": 0.42992429955659345,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6449459117871877,
+        "recall_at_10": 0.2913236128225416,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "04995e7ff5dc857da148281b61b9ede2c632c6ce1547b61143e64d0ff1645094",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4831788146264858,
+        "recall_at_10": 0.4062040662116788,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7089674672191851,
+        "recall_at_10": 0.22274514803225554,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.63422906305087,
+        "recall_at_10": 0.2834719676386848,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.28449309162102443,
+        "recall_at_10": 0.21072126440580163,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41792528086479896,
+        "recall_at_10": 0.15440104868500332,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 202,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2d75f009f1b112063a3442b541af9308874dab52b58235e30ecb9f95a1ab6bec",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2688298793534599,
+        "recall_at_10": 0.20547866436982215,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4839464161677083,
+        "recall_at_10": 0.1265342752814833,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4127405938772777,
+        "recall_at_10": 0.15266569327239687,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7971139849033724,
+        "recall_at_10": 0.7249043602370236,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8668519767550379,
+        "recall_at_10": 0.46228896769868005,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c80b6c864673bae2355b173aa08cf05301b83aee81a93632577c183aefebdb2d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7504300614168634,
+        "recall_at_10": 0.6788033335427526,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.90135775397331,
+        "recall_at_10": 0.3323490599323122,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8513991100957407,
+        "recall_at_10": 0.44702904597061127,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5137761400442873,
+        "recall_at_10": 0.4365013360126796,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6580156588488109,
+        "recall_at_10": 0.2981561796277843,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "4b83d6f1aef116b9cdddf120fc1cd697c8e4bccf16bb0e9f4f7dc635a9237556",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.47675128531106203,
+        "recall_at_10": 0.40662150171331385,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7293841707572991,
+        "recall_at_10": 0.2297041491248413,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6457600449127259,
+        "recall_at_10": 0.2882656421419315,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26866907880792795,
+        "recall_at_10": 0.19929051161067968,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4068040581773788,
+        "recall_at_10": 0.14950367420625676,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 303,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "c6089392f25494cf34d71e55282e73a98a5c4ed16f10a8562b2278c7aa68cce0",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26159904870610284,
+        "recall_at_10": 0.20209494493276572,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.47515209484455506,
+        "recall_at_10": 0.12486956194886002,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.404463804310921,
+        "recall_at_10": 0.1504319709505013,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7719677570612924,
+        "recall_at_10": 0.7009458521602084,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8542647437125712,
+        "recall_at_10": 0.4496650797455434,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "d772fa355f720ecb1287be2179dac1a6ac46bf653036e0c84f5d1a7631702f4d",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7511852609161388,
+        "recall_at_10": 0.668503781560243,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8949846068994018,
+        "recall_at_10": 0.32533344756120397,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8473855202498897,
+        "recall_at_10": 0.4389264152612343,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5165031595095132,
+        "recall_at_10": 0.42298779298369743,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6573996465783596,
+        "recall_at_10": 0.29230654936814077,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "7f6013969c4ca26a2bb1667d3774ff0bf3bcb134824c478e4b0bdc0717aac120",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4908525140092185,
+        "recall_at_10": 0.3967465145336036,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7271140542426325,
+        "recall_at_10": 0.2276465590375268,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6489090147925477,
+        "recall_at_10": 0.28362041190208187,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2668570026891274,
+        "recall_at_10": 0.19339086255306348,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41391130462275016,
+        "recall_at_10": 0.14819314342027493,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 404,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "f3772987d4aacffc78ef8b69b715c1220ae6de649ce58d912e0f8e20dc411fb5",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.2612429225988302,
+        "recall_at_10": 0.19438136725821265,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.4866725477669906,
+        "recall_at_10": 0.12582968864103056,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.41205298542909774,
+        "recall_at_10": 0.148521010831387,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7786332286909237,
+        "recall_at_10": 0.7026948758206174,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8497256181709465,
+        "recall_at_10": 0.4465096342144727,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 20,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "2843557c99fc6a48ac340659676e6592b85645a03fbd2f9a8683a1183655a2ee",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.7285475135064808,
+        "recall_at_10": 0.6592039964017012,
+        "candidate_count_min": 21,
+        "candidate_count_median": 25.0,
+        "candidate_count_max": 212,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.8849015400490828,
+        "recall_at_10": 0.3197513115447656,
+        "candidate_count_min": 24,
+        "candidate_count_median": 52.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.8331467229008348,
+        "recall_at_10": 0.4321136985183157,
+        "candidate_count_min": 21,
+        "candidate_count_median": 40.0,
+        "candidate_count_max": 293,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.5013684110550327,
+        "recall_at_10": 0.43417219142651997,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6421442978668077,
+        "recall_at_10": 0.2924010888090525,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 100,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "af578ce2e2a0c0ccc0400e27aab8289a97fb685c5b09d6facaf28c06800e904a",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.4784944913614464,
+        "recall_at_10": 0.40041065903762674,
+        "candidate_count_min": 101,
+        "candidate_count_median": 105.0,
+        "candidate_count_max": 292,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.7117990335288841,
+        "recall_at_10": 0.2222539286597848,
+        "candidate_count_min": 104,
+        "candidate_count_median": 132.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.6345727913480249,
+        "recall_at_10": 0.28122566868032484,
+        "candidate_count_min": 101,
+        "candidate_count_median": 120.0,
+        "candidate_count_max": 373,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "bpr",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.26884985917652815,
+        "recall_at_10": 0.20072322922694202,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 1
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 192
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.4160844270189725,
+        "recall_at_10": 0.15196275570249235,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 193
+      }
+    },
+    {
+      "model_seed": 47,
+      "sampling_seed": 505,
+      "nonrelevant_budget": 500,
+      "candidate_policy": "all_observed_relevant_plus_uniform_unobserved",
+      "method": "popularity",
+      "query_candidate_pairs_sha256": "1912db4fc60e39ffc36fa040a708d6933af05c643235efc7a96217c5ffb58b2c",
+      "warm_primary": {
+        "queries": 95,
+        "ndcg_at_10": 0.24807076810525344,
+        "recall_at_10": 0.18805959453651605,
+        "candidate_count_min": 501,
+        "candidate_count_median": 505.0,
+        "candidate_count_max": 692,
+        "relevant_pairs": 1571,
+        "fallback_queries": 0
+      },
+      "cold_secondary": {
+        "queries": 192,
+        "ndcg_at_10": 0.488934864232682,
+        "recall_at_10": 0.12783647973987403,
+        "candidate_count_min": 504,
+        "candidate_count_median": 532.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 9637,
+        "fallback_queries": 0
+      },
+      "all_eligible": {
+        "queries": 287,
+        "ndcg_at_10": 0.40920633067133805,
+        "recall_at_10": 0.1477709602474733,
+        "candidate_count_min": 501,
+        "candidate_count_median": 520.0,
+        "candidate_count_max": 773,
+        "relevant_pairs": 11208,
+        "fallback_queries": 0
+      }
+    }
+  ],
+  "factor_sha256": {
+    "13": "b8872ea5ce9fc7cebe248c15547a35714b3ed38aa9e0cf6093fa45d143721593",
+    "29": "ac0ae16ad934a39476c5beb526e16768dd5f38c2bd15b1ced501f5ab09f7db7e",
+    "47": "40d9c5e9393fbd980d8915f789eaf878742c0eb4f5123c4eaf193e361c477ce3"
+  },
+  "full_metrics_reproduced": true,
+  "candidate_hashes_identical_across_models": true,
+  "scope": "Label-assisted sampled offline candidate policies; known repeatedly exposed chronological task. No model improvement, confidence interval, speed, production or causal claim.",
+  "data_attribution": "Harper and Konstan2015, The MovieLens Datasets: History and Context, DOI10.1145/2827872; GroupLens Research, University of Minnesota.",
+  "data_licence": "GroupLens research-only terms; no provider records or factors redistributed.",
+  "environment": {
+    "python": "3.12.9",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "torch": "2.4.0",
+      "matplotlib": "3.10.0"
+    }
+  },
+  "cohort": {
+    "warm_primary": 95,
+    "cold_secondary": 192,
+    "all_eligible": 287,
+    "excluded_future_users": 14,
+    "future_positive_pairs_outside_train_catalog": 95
+  },
+  "summary": [
+    {
+      "method": "bpr",
+      "nonrelevant_budget": null,
+      "conditions": 3,
+      "warm_queries_each": 95,
+      "candidate_count_min": 1008,
+      "candidate_count_median": 1461.0,
+      "candidate_count_max": 1615,
+      "ndcg_at_10": {
+        "mean": 0.17095384070096756,
+        "min": 0.16806657102737813,
+        "max": 0.17322205265229756
+      },
+      "recall_at_10": {
+        "mean": 0.11457767811485835,
+        "min": 0.11023312506121036,
+        "max": 0.12070566545338744
+      }
+    },
+    {
+      "method": "popularity",
+      "nonrelevant_budget": null,
+      "conditions": 3,
+      "warm_queries_each": 95,
+      "candidate_count_min": 1008,
+      "candidate_count_median": 1461.0,
+      "candidate_count_max": 1615,
+      "ndcg_at_10": {
+        "mean": 0.15866403366646886,
+        "min": 0.15866403366646886,
+        "max": 0.15866403366646886
+      },
+      "recall_at_10": {
+        "mean": 0.1060635281852962,
+        "min": 0.1060635281852962,
+        "max": 0.1060635281852962
+      }
+    },
+    {
+      "method": "bpr",
+      "nonrelevant_budget": 20,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 21,
+      "candidate_count_median": 25.0,
+      "candidate_count_max": 212,
+      "ndcg_at_10": {
+        "mean": 0.7778261887003027,
+        "min": 0.7596056268473517,
+        "max": 0.7971139849033724
+      },
+      "recall_at_10": {
+        "mean": 0.711020929688555,
+        "min": 0.6910909266765021,
+        "max": 0.7306506860448714
+      }
+    },
+    {
+      "method": "popularity",
+      "nonrelevant_budget": 20,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 21,
+      "candidate_count_median": 25.0,
+      "candidate_count_max": 212,
+      "ndcg_at_10": {
+        "mean": 0.7445069676285776,
+        "min": 0.7285475135064808,
+        "max": 0.762783183874195
+      },
+      "recall_at_10": {
+        "mean": 0.6702450336035622,
+        "min": 0.648564389565205,
+        "max": 0.6961496669479096
+      }
+    },
+    {
+      "method": "bpr",
+      "nonrelevant_budget": 100,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 101,
+      "candidate_count_median": 105.0,
+      "candidate_count_max": 292,
+      "ndcg_at_10": {
+        "mean": 0.5105387678955047,
+        "min": 0.49690867883268125,
+        "max": 0.5307445120166733
+      },
+      "recall_at_10": {
+        "mean": 0.4257227609955999,
+        "min": 0.3902419736849103,
+        "max": 0.45423496287710186
+      }
+    },
+    {
+      "method": "popularity",
+      "nonrelevant_budget": 100,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 101,
+      "candidate_count_median": 105.0,
+      "candidate_count_max": 292,
+      "ndcg_at_10": {
+        "mean": 0.4827345976512715,
+        "min": 0.47675128531106203,
+        "max": 0.4908525140092185
+      },
+      "recall_at_10": {
+        "mean": 0.4033977589918123,
+        "min": 0.3967465145336036,
+        "max": 0.4070060534628385
+      }
+    },
+    {
+      "method": "bpr",
+      "nonrelevant_budget": 500,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 501,
+      "candidate_count_median": 505.0,
+      "candidate_count_max": 692,
+      "ndcg_at_10": {
+        "mean": 0.27190768357082545,
+        "min": 0.2576768554363875,
+        "max": 0.28449309162102443
+      },
+      "recall_at_10": {
+        "mean": 0.19472017057490493,
+        "min": 0.17461787321209662,
+        "max": 0.21072126440580163
+      }
+    },
+    {
+      "method": "popularity",
+      "nonrelevant_budget": 500,
+      "conditions": 15,
+      "warm_queries_each": 95,
+      "candidate_count_min": 501,
+      "candidate_count_median": 505.0,
+      "candidate_count_max": 692,
+      "ndcg_at_10": {
+        "mean": 0.2600232349652644,
+        "min": 0.24807076810525344,
+        "max": 0.2688298793534599
+      },
+      "recall_at_10": {
+        "mean": 0.19697034298291535,
+        "min": 0.18805959453651605,
+        "max": 0.20547866436982215
+      }
+    }
+  ],
+  "finished_at": "2026-11-09T14:54:03.027109+00:00",
+  "total_conditions": 96,
+  "query_results": 27552,
+  "scalar_metric_checks": 27552,
+  "exact_JSON_CSV_audit": true,
+  "unchanged_factors": true,
+  "nested_pools_checked": true,
+  "positives_and_denominators_retained": true,
+  "private_audit_sha256": {
+    "candidate-pools.json": "f168419710616d7dcce294c19e712d67934d511bdf0ffc57bf207ad5ad96d6de",
+    "query-results.csv": "612cacef3fbe4328133f0dece7a6e2460f73f1ff9216b9ef8f282e420ad26f21",
+    "query-results.json": "04a2796b3ed0d5d07e070a5df0d0748813fcf487da0658d6571a9679d209f5e0"
+  },
+  "wall_seconds_audit_only": 19.812693699990632
+}

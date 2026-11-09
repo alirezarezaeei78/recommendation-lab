@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="777.6pt" height="1008pt" viewBox="0 0 777.6 1008" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-09T18:25:03.484784</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1008 
+L 777.6 1008 
+L 777.6 0 
+L 0 0 
+z
+" style="fill: #f5f8fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 46.656 252 
+L 730.944 252 
+" clip-path="url(#p6af052235b)" style="fill: none; stroke: #ccd7de; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 46.656 398.16 
+L 730.944 398.16 
+" clip-path="url(#p6af052235b)" style="fill: none; stroke: #ccd7de; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 46.656 544.32 
+L 730.944 544.32 
+" clip-path="url(#p6af052235b)" style="fill: none; stroke: #ccd7de; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 46.656 690.48 
+L 730.944 690.48 
+" clip-path="url(#p6af052235b)" style="fill: none; stroke: #ccd7de; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="68.155313" transform="rotate(-0 46.656 68.155313)">Same model. Different candidates.</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="46.656" y="113.304156" transform="rotate(-0 46.656 113.304156)">95 warm queries | frozen BPR vs training popularity</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 147.493031)">All observed positives retained; Recall / ideal-DCG</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 168.768875)">denominators unchanged. Only distractors removed.</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="231.916875" transform="rotate(-0 46.656 231.916875)">Candidate policy</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="419.904" y="231.916875" transform="rotate(-0 419.904 231.916875)">NDCG@10</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="622.08" y="231.916875" transform="rotate(-0 622.08 231.916875)">Recall@10</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="281.557031" transform="rotate(-0 46.656 281.557031)">Full eligible catalog</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="46.656" y="314.309344" transform="rotate(-0 46.656 314.309344)">Pool median: 1,461 items</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="342.144" y="280.037344" transform="rotate(-0 342.144 280.037344)">BPR</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="435.456" y="283.836563" transform="rotate(-0 435.456 283.836563)">0.1710</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="629.856" y="283.836563" transform="rotate(-0 629.856 283.836563)">0.1146</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="342.144" y="327.413344" transform="rotate(-0 342.144 327.413344)">Pop.</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="435.456" y="331.212563" transform="rotate(-0 435.456 331.212563)">0.1587</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="629.856" y="331.212563" transform="rotate(-0 629.856 331.212563)">0.1061</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="427.717031" transform="rotate(-0 46.656 427.717031)">All positives + 500 others</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="46.656" y="460.469344" transform="rotate(-0 46.656 460.469344)">Pool median: 505 items</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="342.144" y="426.197344" transform="rotate(-0 342.144 426.197344)">BPR</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="435.456" y="429.996563" transform="rotate(-0 435.456 429.996563)">0.2719</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="629.856" y="429.996563" transform="rotate(-0 629.856 429.996563)">0.1947</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="342.144" y="473.573344" transform="rotate(-0 342.144 473.573344)">Pop.</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="435.456" y="477.372563" transform="rotate(-0 435.456 477.372563)">0.2600</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="629.856" y="477.372563" transform="rotate(-0 629.856 477.372563)">0.1970</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="573.877031" transform="rotate(-0 46.656 573.877031)">All positives + 100 others</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="46.656" y="606.629344" transform="rotate(-0 46.656 606.629344)">Pool median: 105 items</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="342.144" y="572.357344" transform="rotate(-0 342.144 572.357344)">BPR</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="435.456" y="576.156563" transform="rotate(-0 435.456 576.156563)">0.5105</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="629.856" y="576.156563" transform="rotate(-0 629.856 576.156563)">0.4257</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="342.144" y="619.733344" transform="rotate(-0 342.144 619.733344)">Pop.</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="435.456" y="623.532563" transform="rotate(-0 435.456 623.532563)">0.4827</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="629.856" y="623.532563" transform="rotate(-0 629.856 623.532563)">0.4034</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="720.037031" transform="rotate(-0 46.656 720.037031)">All positives + 20 others</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="46.656" y="752.789344" transform="rotate(-0 46.656 752.789344)">Pool median: 25 items</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="342.144" y="718.517344" transform="rotate(-0 342.144 718.517344)">BPR</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="435.456" y="722.316562" transform="rotate(-0 435.456 722.316562)">0.7778</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087f82" x="629.856" y="722.316562" transform="rotate(-0 629.856 722.316562)">0.7110</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="342.144" y="765.893344" transform="rotate(-0 342.144 765.893344)">Pop.</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="435.456" y="769.692562" transform="rotate(-0 435.456 769.692562)">0.7445</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526475" x="629.856" y="769.692562" transform="rotate(-0 629.856 769.692562)">0.6702</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152f46" x="46.656" y="877.796719" transform="rotate(-0 46.656 877.796719)">Higher sampled scores are not model improvement.</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 910.533656)">Full: mean over 3 frozen model seeds. Sampled: 3 model × 5 sampling seeds.</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 927.330375)">Shared candidate pools across methods. Descriptive means, no intervals.</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 944.127094)">Label-assisted offline test; known exposed split; not independent validation.</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 976.363062)">MovieLens 100K | GroupLens research terms | Harper &amp; Konstan (2015)</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #526475" transform="translate(46.656 992.502875)">DOI 10.1145/2827872 | Original measured comparison</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6af052235b">
+   <rect x="0" y="0" width="777.6" height="1008"/>
+  </clipPath>
+ </defs>
+</svg>
