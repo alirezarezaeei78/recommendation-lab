@@ -75,5 +75,5 @@ plt.close(fig)
 # Remove generated SVG path-attribute trailing whitespace while keeping tokens unchanged.
 svg = ROOT / "score-vs-probability.svg"
 svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines())+"\n",
-               encoding="utf-8")
+               encoding="utf-8", newline="\n")
 print("Generated original 1080x1380 PNG and editable SVG from results.json")

@@ -10,8 +10,8 @@
     },
     {
       "file": "score-vs-probability.svg",
-      "bytes": 10881,
-      "sha256": "f8d95e96c2b0ab27caf025639069f39dc8f5e8ef93aa4f513db3ad60c9fa301f",
+      "bytes": 10677,
+      "sha256": "977e9fa378dadb260c1f4e040eb1ceb4032aa92c9243655d30951c0a8d7e8bf8",
       "kind": "original static technical infographic",
       "source": "plot_tutorial.py + results.json",
       "licence": "repository MIT"
