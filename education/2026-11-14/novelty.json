@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-14",
+  "question": "Does a ranking score specify an item click probability?",
+  "data": "One authored hand-set user and three item vectors; no fitted data or labels",
+  "method": "Dot product; strictly increasing affine transform; item and pairwise logistic arithmetic",
+  "intervention": "Score-scale change after computation; unchanged fixed-user candidates",
+  "outcome": "Executed arithmetic; ordering invariant for these scores, margin likelihoods change; no calibrated click outcome",
+  "novelty_scope": "New worked educational example; established math, no scientific novelty or new benchmark",
+  "benchmark_exposure": "No benchmark used; synthetic teaching inputs chosen to illustrate the concept",
+  "previous_related_work": "23Oct BPR app and9Nov candidate-policy research are distinct; today does not rerun or claim new fitted metrics."
+}

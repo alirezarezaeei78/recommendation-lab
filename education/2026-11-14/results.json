@@ -1,0 +1,107 @@
+{
+  "kind": "authored synthetic arithmetic; no fitted model or outcome labels",
+  "inputs": {
+    "user": [
+      1.0,
+      2.0
+    ],
+    "items": {
+      "A": [
+        0.4,
+        0.2
+      ],
+      "B": [
+        -0.1,
+        0.2
+      ],
+      "C": [
+        0.2,
+        -0.2
+      ]
+    }
+  },
+  "transform": {
+    "scale": 10.0,
+    "shift": 7.0,
+    "operation": "10*s+7"
+  },
+  "rows": [
+    {
+      "item": "A",
+      "item_vector": [
+        0.4,
+        0.2
+      ],
+      "score": 0.8,
+      "transformed_score": 15.0,
+      "single_item_sigmoid": 0.6899744811276125,
+      "transformed_single_item_sigmoid": 0.999999694097773
+    },
+    {
+      "item": "B",
+      "item_vector": [
+        -0.1,
+        0.2
+      ],
+      "score": 0.30000000000000004,
+      "transformed_score": 10.0,
+      "single_item_sigmoid": 0.574442516811659,
+      "transformed_single_item_sigmoid": 0.9999546021312976
+    },
+    {
+      "item": "C",
+      "item_vector": [
+        0.2,
+        -0.2
+      ],
+      "score": -0.2,
+      "transformed_score": 5.0,
+      "single_item_sigmoid": 0.4501660026875221,
+      "transformed_single_item_sigmoid": 0.9933071490757153
+    }
+  ],
+  "rank_original": [
+    "A",
+    "B",
+    "C"
+  ],
+  "rank_transformed": [
+    "A",
+    "B",
+    "C"
+  ],
+  "rank_sigmoid": [
+    "A",
+    "B",
+    "C"
+  ],
+  "pair_A_over_B": {
+    "margin": 0.5,
+    "sigmoid_margin": 0.6224593312018546,
+    "transformed_margin": 5.0,
+    "transformed_sigmoid_margin": 0.9933071490757153,
+    "shift_only_margin": 0.5,
+    "negative_log_sigmoid": 0.47407698418010663,
+    "transformed_negative_log_sigmoid": 0.006715348489117944,
+    "interpretation": "BPR pairwise model illustration, not click probability"
+  },
+  "limitations": [
+    "No observed event frequencies; calibration is unmeasured.",
+    "Fixed user and candidate set; no inference about another model or user.",
+    "Positive rescaling preserves this ordering, not the BPR training objective.",
+    "Sigmoid saturation can merge distinct extreme floating-point scores."
+  ],
+  "environment": {
+    "python": "3.12.9",
+    "system": "Windows",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "dependencies": "standard library only",
+    "seed": null,
+    "model_fits": 0
+  },
+  "sha256": {
+    "tutorial.py": "91c9f681705bfa1625dee719cbb4f767ff9aa107e8a4f80840af2c2062a781dc",
+    "PROTOCOL.md": "021f27be03345a184baec60e8ccdce53b5c4bdc1f50d86da2f4192920974499b"
+  }
+}

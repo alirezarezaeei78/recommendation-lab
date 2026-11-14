@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="777.6pt" height="993.6pt" viewBox="0 0 777.6 993.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 993.6
+L 777.6 993.6
+L 777.6 0
+L 0 0
+z
+" style="fill: #f6f4ed"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 34.992 528.5952
+L 742.608 528.5952
+Q 751.9392 528.5952 751.9392 516.672
+L 751.9392 168.912
+Q 751.9392 156.9888 742.608 156.9888
+L 34.992 156.9888
+Q 25.6608 156.9888 25.6608 168.912
+L 25.6608 516.672
+Q 25.6608 528.5952 34.992 528.5952
+z
+" clip-path="url(#pe6e3c3f6b5)" style="fill: #ffffff; stroke: #d6e1df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 48.9888 357.696
+L 725.5008 357.696
+Q 727.8336 357.696 727.8336 354.7152
+L 727.8336 310.0032
+Q 727.8336 307.0224 725.5008 307.0224
+L 48.9888 307.0224
+Q 46.656 307.0224 46.656 310.0032
+L 46.656 354.7152
+Q 46.656 357.696 48.9888 357.696
+z
+" clip-path="url(#pe6e3c3f6b5)" style="fill: #e7f3ef"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 48.9888 412.344
+L 725.5008 412.344
+Q 727.8336 412.344 727.8336 409.3632
+L 727.8336 364.6512
+Q 727.8336 361.6704 725.5008 361.6704
+L 48.9888 361.6704
+Q 46.656 361.6704 46.656 364.6512
+L 46.656 409.3632
+Q 46.656 412.344 48.9888 412.344
+z
+" clip-path="url(#pe6e3c3f6b5)" style="fill: #f5f7f6"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 48.9888 466.992
+L 725.5008 466.992
+Q 727.8336 466.992 727.8336 464.0112
+L 727.8336 419.2992
+Q 727.8336 416.3184 725.5008 416.3184
+L 48.9888 416.3184
+Q 46.656 416.3184 46.656 419.2992
+L 46.656 464.0112
+Q 46.656 466.992 48.9888 466.992
+z
+" clip-path="url(#pe6e3c3f6b5)" style="fill: #f5f7f6"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 34.992 809.784
+L 742.608 809.784
+Q 751.9392 809.784 751.9392 797.8608
+L 751.9392 552.4416
+Q 751.9392 540.5184 742.608 540.5184
+L 34.992 540.5184
+Q 25.6608 540.5184 25.6608 552.4416
+L 25.6608 797.8608
+Q 25.6608 809.784 34.992 809.784
+z
+" clip-path="url(#pe6e3c3f6b5)" style="fill: #ffffff; stroke: #d6e1df; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 30px; font-family: 'DejaVu Sans'; fill: #173748" transform="translate(42.768 56.577713)">Score scale can change.</text>
+    <text style="font-weight: 700; font-size: 30px; font-family: 'DejaVu Sans'; fill: #173748" transform="translate(42.768 89.265759)">The ranking can stay.</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="42.768" y="131.155744" transform="rotate(-0 42.768 131.155744)">Authored synthetic arithmetic • no model fit or clicks</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087d7a" x="50.544" y="200.532563" transform="rotate(-0 50.544 200.532563)">1  Same user, same three candidates</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="50.544" y="240.744075" transform="rotate(-0 50.544 240.744075)">User vector [1, 2]     Score s = user · item</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="58.32" y="285.923587" transform="rotate(-0 58.32 285.923587)">Item · vector</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="381.024" y="285.923587" transform="rotate(-0 381.024 285.923587)">s</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="513.216" y="285.923587" transform="rotate(-0 513.216 285.923587)">10s + 7</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="649.296" y="285.923587" transform="rotate(-0 649.296 285.923587)">Rank</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="58.32" y="330.927919" transform="rotate(-0 58.32 330.927919)">A  [0.4, 0.2]</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="381.024" y="330.927919" transform="rotate(-0 381.024 330.927919)">0.8</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="513.216" y="330.927919" transform="rotate(-0 513.216 330.927919)">15</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="649.296" y="330.927919" transform="rotate(-0 649.296 330.927919)">1</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="58.32" y="385.575919" transform="rotate(-0 58.32 385.575919)">B  [-0.1, 0.2]</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="381.024" y="385.575919" transform="rotate(-0 381.024 385.575919)">0.3</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="513.216" y="385.575919" transform="rotate(-0 513.216 385.575919)">10</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="649.296" y="385.575919" transform="rotate(-0 649.296 385.575919)">2</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="58.32" y="440.223919" transform="rotate(-0 58.32 440.223919)">C  [0.2, -0.2]</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="381.024" y="440.223919" transform="rotate(-0 381.024 440.223919)">-0.2</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="513.216" y="440.223919" transform="rotate(-0 513.216 440.223919)">5</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="649.296" y="440.223919" transform="rotate(-0 649.296 440.223919)">3</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087d7a" x="58.32" y="499.372406" transform="rotate(-0 58.32 499.372406)">A &gt; B &gt; C in both score columns</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087d7a" x="50.544" y="584.062163" transform="rotate(-0 50.544 584.062163)">2  BPR models a pairwise preference</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="50.544" y="622.286475" transform="rotate(-0 50.544 622.286475)">Pair form:  σ(s_A − s_B),  where σ is sigmoid</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="58.32" y="666.472387" transform="rotate(-0 58.32 666.472387)">Original scores</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="416.016" y="666.472387" transform="rotate(-0 416.016 666.472387)">Rescaled scores</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="58.32" y="705.047606" transform="rotate(-0 58.32 705.047606)">0.8 − 0.3 = 0.5</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="416.016" y="705.047606" transform="rotate(-0 416.016 705.047606)">15 − 10 = 5</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="58.32" y="744.55785" transform="rotate(-0 58.32 744.55785)">σ(0.5) = 0.6225</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="416.016" y="744.55785" transform="rotate(-0 416.016 744.55785)">σ(5) = 0.9933</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #45616c" x="58.32" y="782.957344" transform="rotate(-0 58.32 782.957344)">Order stays fixed; margins and training loss change.</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #173748" x="46.656" y="845.846475" transform="rotate(-0 46.656 845.846475)">A pair-preference model does not establish P(click).</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #087d7a" x="46.656" y="882.142163" transform="rotate(-0 46.656 882.142163)">Before displaying a percentage</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #173748" transform="translate(46.656 918.379275)">Define the event, time window and exposure.</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #173748" transform="translate(46.656 943.814275)">Fit/check calibration on separate outcome data.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe6e3c3f6b5">
+   <rect x="0" y="0" width="777.6" height="993.6"/>
+  </clipPath>
+ </defs>
+</svg>

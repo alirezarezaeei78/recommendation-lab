@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "file": "score-vs-probability.png",
+      "bytes": 163480,
+      "sha256": "6ca8809ff8604e089bd5ed25188116b923cbc68e6c17a98e9a99de9b4d0452c7",
+      "kind": "original static technical infographic",
+      "source": "plot_tutorial.py + results.json",
+      "licence": "repository MIT"
+    },
+    {
+      "file": "score-vs-probability.svg",
+      "bytes": 10881,
+      "sha256": "f8d95e96c2b0ab27caf025639069f39dc8f5e8ef93aa4f513db3ad60c9fa301f",
+      "kind": "original static technical infographic",
+      "source": "plot_tutorial.py + results.json",
+      "licence": "repository MIT"
+    }
+  ]
+}

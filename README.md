@@ -1,5 +1,9 @@
 # Recommendation Explorer
 
+14 November: [score scale, rank and probability](education/2026-11-14/README.md).
+An executed synthetic tutorial checks dot products, preserved ordering and the
+distinction between BPR pair preference and calibrated click probability.
+
 New 9 November: [frozen-model candidate-sampling comparison](experiments/2026-11-09/README.md).
 Full-catalog and sampled offline metrics use the same queries, fixed relevance
 denominators and frozen models. Higher sampled scores do not show model improvement.

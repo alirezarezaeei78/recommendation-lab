@@ -1,0 +1,17 @@
+{
+  "tests_passed": 6,
+  "result": "all passed",
+  "independent_oracles": [
+    "Exact rational dot/affine values",
+    "60-digit Decimal exponential sigmoid values"
+  ],
+  "pairwise_comparisons": 9,
+  "fitted_models": 0,
+  "outcome_labels": 0,
+  "meaning": "Arithmetic verification only; no measured calibration or predictive performance",
+  "visual_environment": {
+    "matplotlib": "3.10.0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-11-14T13:40:18.996143+00:00",
+  "execution_started": false,
+  "model_fits": 0,
+  "protocol_sha256": "021f27be03345a184baec60e8ccdce53b5c4bdc1f50d86da2f4192920974499b",
+  "script_sha256": "91c9f681705bfa1625dee719cbb4f767ff9aa107e8a4f80840af2c2062a781dc",
+  "checks_sha256": "e9ea21b3b3e69b835c00af2554e0c9dd8adffdc98e644c7debbab6c9b076e313",
+  "scope": "Predetermined authored teaching inputs and independent arithmetic oracles, not empirical research."
+}

@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-14T13:42:31.796548+00:00",
+  "method_sources": [
+    {
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback",
+      "authors": "Rendle, Freudenthaler, Gantner, Schmidt-Thieme",
+      "venue": "UAI2009 proceedings",
+      "arxiv_version": "1205.2618v1;9May2012",
+      "url": "https://arxiv.org/abs/1205.2618v1",
+      "pdf": "https://arxiv.org/pdf/1205.2618",
+      "sections": "4.1;4.3/4.3.1",
+      "verified_claims": [
+        "BPR pair preference uses logistic sigmoid of a score difference",
+        "MF scores are user/item factor dot products"
+      ],
+      "scope": "Established method only; no empirical result or new-paper claim; no copied figures."
+    },
+    {
+      "title": "Probability calibration",
+      "version": "scikit-learn1.4.2",
+      "url": "https://scikit-learn.org/1.4/modules/calibration.html",
+      "sections": "Definition;1.16.1;1.16.2",
+      "verified_claims": [
+        "Calibration relates predicted values to observed positive frequencies",
+        "Fit/check calibration with data separate from base-model fitting"
+      ],
+      "scope": "General definition only; no calibration study was executed."
+    }
+  ],
+  "data": {
+    "description": "Hand-set user and three item vectors; no real records",
+    "licence": "Repository MIT; authored synthetic teaching inputs",
+    "provider_data_used": false
+  },
+  "assets": {
+    "description": "Original Matplotlib table and arithmetic infographic derived from saved results",
+    "licence": "Repository MIT",
+    "copied_artwork": false
+  },
+  "code_licence": "Repository MIT; existing third-party notices preserved"
+}
